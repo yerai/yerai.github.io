@@ -12,6 +12,11 @@ html, body {
 	margin-top: 5px;
 }
 
+.my-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 @media only screen and (max-device-width: 768px) {
 	body{
 		background-image: none;
