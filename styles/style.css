@@ -7,7 +7,6 @@ html, body{
 
 .about-me{
 	margin-left: 120px;
-
 }
 
 .title{
@@ -94,7 +93,6 @@ html, body{
 .project-card{
 	margin:20px;
 	margin-top: 60px;
-	margin-bottom: 200px;
 }
 
 .project-card .button {
@@ -121,6 +119,11 @@ html, body{
 	color: #052F5F;
 }
 
+.projects{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
 
 @media (max-width: 480px) {
 	.about-me{
@@ -136,8 +139,4 @@ html, body{
 		font-size: 30px;
 		margin-top: -5px;
 	}
-}
-
-.projects{
-	margin-top: 100px;
 }
