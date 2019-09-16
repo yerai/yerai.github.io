@@ -19,6 +19,7 @@ html, body{
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 /* About me */ 
@@ -106,7 +107,6 @@ html, body{
 
 	.exp-mobile{
 		margin-top: 40px;
-		margin-bottom: 40px;
 	}
 }
 
