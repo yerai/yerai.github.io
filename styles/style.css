@@ -110,5 +110,9 @@ html, body{
 	html,body{
 		padding:10px;
 	}
+
+	.exp-mobile{
+		padding-top: 40px;
+	}
 }
 
