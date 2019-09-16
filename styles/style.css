@@ -18,7 +18,7 @@ html, body{
 	font-size: 56px;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 /* About me */ 
@@ -58,13 +58,6 @@ html, body{
 	padding-left: 95px;
 	padding-right: 95px;
 }
-
-.section-title{
-	font-family: 'Poppins', sans-serif;
-	font-size: 30px;
-}
-
-
 
 /* Item */
 .item-img{
@@ -112,7 +105,8 @@ html, body{
 	}
 
 	.exp-mobile{
-		padding-top: 40px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
