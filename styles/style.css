@@ -72,6 +72,10 @@ html, body{
 	padding-top: 8px;
 }
 
+.img-padding{
+	padding-bottom: 15px;
+}
+
 /* Button */
 .button {
 	padding: 5px 25px;
@@ -108,5 +112,7 @@ html, body{
 	.exp-mobile{
 		margin-top: 40px;
 	}
+
+	
 }
 
