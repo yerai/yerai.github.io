@@ -72,10 +72,6 @@ html, body{
 	padding-top: 8px;
 }
 
-.img-padding{
-	padding-bottom: 15px;
-}
-
 /* Button */
 .button {
 	padding: 5px 25px;
@@ -104,6 +100,22 @@ html, body{
     border-color: white;
 }
 
+/* FlowLight */
+.img-padding{
+	padding-bottom: 15px;
+}
+
+.go-back{
+	color: white;
+	text-decoration: none;
+}
+
+.go-back:hover{
+	color: white;
+	text-decoration: none;
+}
+
+/* Mobile */
 @media (max-width: 480px) {
 	html,body{
 		padding:10px;
