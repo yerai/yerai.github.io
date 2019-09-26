@@ -22,6 +22,16 @@ html, body{
 	margin-top: 30px;
 }
 
+.section-title{
+	font-size: 56px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+
+
 /* About me */ 
 .about-me-title{
 	font-weight: bold;
@@ -123,6 +133,10 @@ html, body{
 
 	.exp-mobile{
 		margin-top: 40px;
+	}
+
+	.section-title{
+		font-size:35px;
 	}
 
 	
