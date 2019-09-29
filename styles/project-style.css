@@ -1,72 +1,53 @@
 html, body{
 	font-family: 'Raleway', sans-serif;
-	height: 100%; /* Makes page full screen */
 	background-color: black;
 	color: white;
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
-/* AUX */
-.text-vertical{
-	margin-top: auto;
-	margin-bottom: auto;
+
+/* Go Back */
+.go-back, .go-back:hover, .go-back:visited, .go-back:active{
+	color: white;
+	text-decoration: none;
+	padding-left: 15px;
+	
 }
 
-.section-name{
+/* Titles */
+.section-title{
 	font-size: 56px;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 30px;
-	margin-top: 30px;
 }
 
-/* About me */ 
-.about-me-title{
+.sub-title{
+	font-size: 24px;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
-	font-size: 60px;
+	padding:0px;
 }
 
-.about-me-text{
-	font-size: 20px;
-}
-
-.about-me-buttons{
-	padding-top: 15px;
-}
-
-/* Experience */
-.exp-period{
+.caption{
+	font-size: 15px;
+	font-weight: normal;
 	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	font-size: 12px;
 }
 
-.exp-position{
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	font-size:20px;
+/* Images */
+.main-img{
+	padding-left: 15px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.exp-company{
-	font-style: italic;
-}
-
-/* Section */
-.section-project{
-	margin-top: 100px;
-	padding-bottom: 100px;
-}
-
-/* Item */
-.item-img{
-	padding-top: 30px;
-}
-
-.item-title{
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	padding-top: 8px;
+.img-group{
+	padding-right: 15px;
+	padding-left: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* Button */
@@ -97,15 +78,23 @@ html, body{
     border-color: white;
 }
 
+.button-row{
+	padding-left: 15px;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
+	
 	html,body{
 		padding:10px;
+		margin-top: 10px;
 	}
 
-	.exp-mobile{
-		margin-top: 40px;
+	.section-title{
+		font-size:40px;
+		margin-bottom: 20px;
 	}
+
 	
 }
 

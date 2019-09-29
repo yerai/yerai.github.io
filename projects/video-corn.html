@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/project-style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
 
     <!-- Animations -->
@@ -35,54 +35,38 @@
 
   <body>
 
-    <!-- Affective Wear -->
-    <div class="row h-100">
-		<div class="col-12 offset-sm-1 col-sm-10 text-vertical">
 
-			<div class="row">
-				<a href="../index.html" class="go-back col-12" data-aos="zoom-in"><p>< Go back</p></a>
+  	<div class="row">
+  		<div class="col-12 offset-sm-1 col-sm-10">
+  			<a href="../index.html">
+  				<div class="go-back" data-aos="zoom-in">< Go back</div>
+  			</a>
+
+  			<div class="section-title col-12 col-sm-10" data-aos="zoom-in">VideoCorn</div>
+  			<div class="col-12 col-sm-8" data-aos="zoom-in">
+  				<div class="row button-row">
+					 <a class="button col-auto" href="https://github.com/yerai/DAW-VideoCorn" title="View on Github">View on Github</a>
+				  </div>
+				
+				<p>VideoCorn was the result of a programming project from the Design and Development of Web Applications course at Universidad Politécnica de Madrid. This project aims to implement both the front and back end of an online video platform with two types of roles: users and administrators. </p>
 			</div>
 
-			<div class="row" >
-
-				<!-- TITLE -->
-				<div class="section-title order-first col-12 col-sm-6" data-aos="zoom-in">VideoCorn</div>
-
-				<!-- DESCRIPTION -->
-				<div class="col-12 col-sm-7" data-aos="zoom-in">
-
-          <a class="button col-auto" href="https://github.com/yerai/DAW-VideoCorn" title="View on Github">View on Github</a>
-
-				  <p>VideoCorn was the result of a programming project from the Design and Development of Web Applications course at Universidad Politécnica de Madrid. This project aims to implement both the front and back end of an online video platform with two types of roles: users and administrators. </p>
-
+			<div class="row" data-aos="zoom-in">
+				<div class="col-12 col-sm-6">
+					<img src="../images/vc-img-1.jpg" class="img-fluid main-img" alt="Desktop application screenshots">
 				</div>
-			</div> 
-		</div>
-    </div>
-    
-
-	<div class="row">
-	<!-- PICTURES -->
-	    <div class="col-12 col-sm-6 order-first order-sm-last" data-aos="zoom-in">
-	     <img src="../images/vc-img-1.jpg" class="img-fluid img-padding" alt="Desktop application screenshots">
-	    </div>
-	    <div class="col-12 col-sm-6 order-first order-sm-last" data-aos="zoom-in">
-	     <img src="../images/vc-img-2.jpg" class="img-fluid img-padding" alt="Mobile application screenshots">
-	    </div>
-	</div>
-            
-
-	<div class="row h-100">
-		<div class="col-12 offset-sm-1 col-sm-10 text-vertical">
-			<div class="row">
-				<div class="col-12 col-sm-7" data-aos="zoom-in">
-          <p>On the one hand, users can log into the platform, look up and watch movies. For copyright reasons, a trailer will be displayed instead of the actual film. </p>
-          <p>On the other hand, administrators will be able to manage both users and movies in the database. To add new titles to the catalog, The Movie Database API will be utilized. Administrators will provide the title and trailer and the application will retrieve the rest of the information from the API automatically. </p>
-          <p>Regarding the implementation, Django, HTML, and Bootstrap were used for the project. </p>
+				<div class="col-12 col-sm-6">
+					<img src="../images/vc-img-2.jpg" class="img-fluid main-img" alt="Mobile application screenshots">
 				</div>
 			</div>
-		</div>
-	</div>
+
+			<div class="col-12 col-sm-8" data-aos="zoom-in">
+				<p>On the one hand, users can log into the platform, look up and watch movies. For copyright reasons, a trailer will be displayed instead of the actual film.</p>
+          <p>On the other hand, administrators will be able to manage both users and movies in the database. To add new titles to the catalog, The Movie Database API will be utilized. Administrators will provide the title and trailer and the application will retrieve the rest of the information from the API automatically.</p>
+          <p>Regarding the implementation, Django, HTML, and Bootstrap were used for the project.</p>
+			</div>
+  		</div>
+  	</div>
 
 	<!-- AOS Animations -->
   	<script src="../plugins/aos/aos.js"></script>
