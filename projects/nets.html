@@ -51,7 +51,7 @@
           <div class="col-12">
             <div class="row">
               <a class="button col-auto" href="https://vimeo.com/368869269" title="Watch Video">Watch Video</a>
-              <!--<a class="button col-auto" href="https://github.com/yerai/flowlight" title="View on Github">View on Github</a>-->
+              <a class="button col-auto" href="https://github.com/yerai/climbing-with-lights" title="View on Github">View on Github</a>
             </div>
           </div>
   				
@@ -98,7 +98,7 @@
             <li>When no user is interacting with the nets, the prototype will light up to invite users.</li>
             <li>When a user starts climbing the net, each section of the net that is pulled will light up and trigger a sound.</li>
             <li>Each column of the prototype will represent an instrument or collection of sounds. </li>
-            <li>When two or more sections of the net are pulled, the sounds will mix together.</li>
+            <li>When two or more sections of the net are pulled, the sounds will mix.</li>
           </ul></p>
       </div>
 
@@ -110,9 +110,156 @@
         </div>
       </div>
 
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <div class="sub-title">Small Scale Prototype</div>
+      </div>
 
       <div class="col-12 col-sm-8" data-aos="zoom-in">
-        <div class="sub-title">Final Result</div>
+        <p>The first step towards creating our final prototype was to build a small scale version. We created the structure using two circular pieces of wood and a fishing line. At this stage of the process, we simulated the interaction with the net using a capacitive wire attached to four sections. Each of these sections lighted up different color LEDs on the net.</p>
+        <p>During a session of the course, we shared our improvements and tested the actual prototype. From this testing, we realized that the capacitive implementation was not ideal for winter since kids could potentially wear gloves.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-7.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-8.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <div class="sub-title">Human Scale Prototype</div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <p>For the second iteration of the prototype, we decided to build a human-scale actionable section of the net. Since we discovered that our previous approach using capacitive sensors would not work, we decided to explore different alternatives. We discussed three main possible solutions: a flex sensor, a force resistor, and a simple button. The first idea was to place a flex sensor in the middle of the section of the net. When this section was pulled downwards, the flex sensor could record the change and trigger the net. The second alternative was similar, but instead of using a flex sensor, using a force resistor. Lastly, we thought about laying three buttons alongside the section of the net. When pulled down, all of them would be pressed and therefore, trigger the net. After testing out the alternatives, we decided to implement the flex sensor solution, since the force resistor didn't work well inside the net and the buttons were too big to be placed alongside LEDs.</p>
+        
+        <p>The next step to build the prototype was to place both the LEDs for the visual response and the flex sensor inside a transparent plastic tube. We decided to use this material since it allows light trough and protects the components from weather conditions. To achieve this, we attached the bending sensor to a spongy material that was glued to the middle of the LED strip. Once all the connections were ready, we introduced the LED strip through the tube and created a structure to properly calibrate and test the prototype.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-9.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-10.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-11.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <div class="sub-title">Real-world testing</div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <p>For our third iteration, we wanted to test the prototype in a real environment. For this reason, we went to a park near KTH to measure the climbing structure available. The idea was to build a similar scale prototype that could be attached to this net. </p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-12.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-13.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">  
+        <p>Following the same procedure as with the human scale prototype, we build two rows of the net, with two sections each. Also, we made a program using Processing to play audio files when each of the sections was triggered. This way, the Arduino would communicate with processing through the computer, which was also connected to a pair of Bluetooth speakers.</p>
+
+        <p>Once in the park, we taped the tubes to the actual net and connected them to the computer. To make the prototype work, we calibrated the sensors in the new setup, adjusting them to the net's flexibility.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-14.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-15.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-16.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">  
+        <p>Right after this, we tested the prototype ourselves and asked kids from the playground to try it out.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-17.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-18.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-19.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <div class="sub-title">Final Prototype</div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <p>To exhibit the prototype as planned in the course, we needed to create a structure that supported the actual prototype. For this reason, we added three vertical tubes to form a grid with the two functional rows we already had. Also, we decided to create another activatable section of the net that was placed at the top. Since we didn't want the different connections to be seen or susceptible to being damaged while using the prototype, we placed all of them on one of the vertical tubes, letting the connections accessible from the bottom, where the Arduino was connected.</p>
+        <p>In order to present it during the exhibition, we decided to hang the net from a structure available in the exhibition hall. We placed a fishing net through the vertical tubes and tie them both to the structure and a wood structure placed on the floor.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-20.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-21.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-22.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <p>Lastly, we programmed an idle mode that would run when no user is interacting with the nets. This mode turns on 16 random individual LEDs on the net every few seconds in random colors. When a user bends any of the triggerable sections of the net, all LEDs turn off except for the one being interacted with.</p>
+      </div>
+
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <div class="sub-title">Exhibition</div>
+      </div>
+
+
+      <div class="col-12 col-sm-8" data-aos="zoom-in">
+        <p>During the exhibition, many different people were able to play and test our prototype. In most of the cases, people would approach our prototype and start playing and touching it. After this, we would explain to them what our idea was and how would it look like if it were to be implemented. In some cases, participants didn't try to pull from the net, or didn't pull down enough to trigger the actions.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-23.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-24.jpg" class="img-fluid main-img">
+          </div> 
+          <div class="col-12 col-sm-4">
+            <img src="../images/n-img-25.jpg" class="img-fluid main-img">
+          </div> 
+        </div>
       </div>
 
       <div class="col-12" data-aos="zoom-in">
