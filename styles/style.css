@@ -71,7 +71,7 @@ html, body{
 
 /* Button */
 .button {
-	padding: 5px 20px;
+	padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -95,6 +95,22 @@ html, body{
     border-style: solid;
     border-width: 1px;
     border-color: white;
+}
+
+/* Button 2 */
+.button-2 {
+	padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 /* Mobile */

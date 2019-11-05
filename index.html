@@ -85,8 +85,18 @@
   				<div class="row">
 
 					<!-- TITLE -->
-					<div class="section-name col-12" data-aos="zoom-in">Projects</div>
+					<div class="section-name col-12" data-aos="zoom-in" style="margin-bottom: 10px;">Projects</div>
 
+          <!-- Categories --> 
+          <div class="col-12" data-aos="zoom-in"> 
+              <div class="button-2" onclick="showAll()" style="background-color: white; color:black" id="all">All</div>
+              <div class="button-2" onclick="showPhysical()" id="pi">Physical Interaction</div>
+              <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
+              <div class="button-2" onclick="showAnimation()" id="animation">Animation</div>
+              <div class="button-2" onclick="showProgramming()" id="programming">Programming</div>
+          </div>
+       
+          
 			    <!-- nets --> 
             <div class="col-12 col-sm-4" data-aos="zoom-in" id='nets'>
               <a href="./projects/nets.html"><img src="images/climbing-nets.jpg" class="img-fluid item-img" alt="climbing nets prototype"></a>
@@ -167,7 +177,7 @@
             </div>
 
             <!-- Beat of my Drum --> 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" robot'>
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='robot'>
               <a href="./projects/robot.html"><img src="images/robot.jpg" class="img-fluid item-img" alt="Robot Image"></a>
               <div class="item-title">Beat of my Drum</div>
               <p>Animated short choreographing a set of simple base shapes to elegantly come together as a robotic character that dances. Created using Autodesk Maya.</p>
@@ -176,18 +186,93 @@
             </div>
 
             <!-- 100Cards --> 
-            <div class="col-12 col-sm-4" data-aos="zoom-in">
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='cards'>
               <a href="https://www.100cards.io/"><img src="images/100cards.png" class="img-fluid item-img" alt="100 Cards Lading Page"></a>
               <div class="item-title">100Cards Landing Page</div>
               <p>Design and development of a responsive Landing Page for a fin-tech mobile application - including assets. Made using Wordpress and CSS.</p>
               <a class="button col-auto" href="https://www.100cards.io/" title="Demo" target="_blank">Demo</a>
             </div>
 
-            
-			  		
   				</div>
   			</div>
   		</div>
+
+  <!-- Categories -->
+  <script>
+    var projects = ["nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","video-corn","analysis-tool","newspaper","robot","cards"];
+    var categories = ["all","pi","uxui","animation","programming"];
+
+    function showPhysical() {
+      hideAll();
+      resetCategories();
+      document.getElementById("nets").style.display = "block";
+      document.getElementById("flowlight").style.display = "block";
+      document.getElementById("pi").style.backgroundColor = "white";
+      document.getElementById("pi").style.color = "black";
+      AOS.refresh();
+    }
+
+    function showUxUi() {
+      hideAll();
+      resetCategories();
+      document.getElementById("mobile-ticket").style.display = "block";
+      document.getElementById("affective-wear").style.display = "block";
+      document.getElementById("voluntary-work").style.display = "block";
+      document.getElementById("uxui").style.backgroundColor = "white";
+      document.getElementById("uxui").style.color = "black";
+      AOS.refresh();
+    }
+
+    function showAnimation() {
+      hideAll();
+      resetCategories();
+      document.getElementById("monster-project").style.display = "block";
+      document.getElementById("robot").style.display = "block";
+      document.getElementById("animation").style.backgroundColor = "white";
+      document.getElementById("animation").style.color = "black";
+      AOS.refresh();
+    }
+
+    function showProgramming() {
+      hideAll();
+      resetCategories();
+      document.getElementById("affective-wear").style.display = "block";
+      document.getElementById("video-corn").style.display = "block";
+      document.getElementById("analysis-tool").style.display = "block";
+      document.getElementById("newspaper").style.display = "block";
+      document.getElementById("cards").style.display = "block";
+      document.getElementById("programming").style.backgroundColor = "white";
+      document.getElementById("programming").style.color = "black";
+      AOS.refresh();
+    }
+
+    function showAll(){
+      for(i=0; i<projects.length; i++){
+        var x = document.getElementById(projects[i]);
+        x.style.display = "block";
+      }
+      resetCategories();
+      document.getElementById("all").style.backgroundColor = "white";
+      document.getElementById("all").style.color = "black";
+      AOS.refresh();
+    }
+
+    function hideAll(){
+      for(i=0; i<projects.length; i++){
+        var x = document.getElementById(projects[i]);
+        x.style.display = "none";
+      }
+    }
+
+    function resetCategories(){
+      for(i=0; i<categories.length; i++){
+        var x = document.getElementById(categories[i]);
+        x.style.backgroundColor = "black";
+        x.style.color = "white";
+      }
+    }
+
+  </script>
    
 	<!-- AOS Animations -->
   	<script src="plugins/aos/aos.js"></script>
