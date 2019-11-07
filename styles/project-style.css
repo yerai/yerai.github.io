@@ -26,6 +26,13 @@ html, body{
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 15px;
+}
+
+.sub-sub-title{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
 
 }
 
@@ -35,6 +42,14 @@ html, body{
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 3px;
 	margin-top:5px;
+}
+
+.text-title{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 /* Images */
@@ -53,12 +68,34 @@ html, body{
 	margin-bottom: 15px;
 }
 
+.img-alone{
+	margin-top: 20px;
+}
+
 /* Texts */
 .text-box{
 	background-color: white; 
 	color:black;
 	padding: 15px;
 	padding-top: 0px;
+}
+
+.text-box-2{
+	background-color: white; 
+	color:black;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+.text-box-2{
+	background-color: white; 
+	color:black;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 30px;
 }
 
 /* Button */
@@ -105,6 +142,11 @@ html, body{
 	.main-img{
 		margin-top: 4px;
 		margin-bottom: 20px;
+	}
+
+	.text-box-2{
+		margin-left: 0px;
+		padding: 30px;
 	}
 
 }
