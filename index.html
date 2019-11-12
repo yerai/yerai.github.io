@@ -62,16 +62,16 @@
 					<div class="section-name col-12" data-aos="zoom-in" style="margin-bottom: 10px;">Projects</div>
 
           <!-- Categories --> 
-          <div class="col-12" data-aos="zoom-in"> 
+          <div class="col-12" data-aos="zoom-in" style="display: none" id="cat"> 
               <div class="button-2" onclick="showAll()" style="background-color: white; color:black" id="all">All</div>
               <div class="button-2" onclick="showPhysical()" id="pi">Physical Interaction</div>
               <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
               <div class="button-2" onclick="showAnimation()" id="animation">Animation</div>
-              <!-- <div class="button-2" onclick="showProgramming()" id="programming">Programming</div> -->
+              <div class="button-2" onclick="showProgramming()" id="programming">Programming</div>
           </div>
        
           
-			    <!-- nets --> 
+			<!-- nets --> 
             <div class="col-12 col-sm-4" data-aos="zoom-in" id='nets'>
               <a href="./projects/nets.html"><img src="images/climbing-nets.jpg" class="img-fluid item-img" alt="climbing nets prototype"></a>
               <div class="item-title">Climbing with lights</div>
@@ -116,44 +116,42 @@
             </div>
 
             <!-- The Monster Project --> 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='monster-project'>
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='monster-project' style="display: none">
               <a href="./projects/monster-project.html"><img src="images/monster-project.jpg" class="img-fluid item-img" alt="Character Design"></a>
               <div class="item-title">The Monster Project</div>
               <p>Production and design of a CG character inspired by a child's drawing from the Hanham Abbot School Gallery. Created using Autodesk Maya.</p>
               <a class="button col-auto" href="./projects/monster-project.html" title="Read More">Read More</a>
             </div>
 
-
-
-            <!-- Videocorn 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='video-corn'>
+            <!-- Videocorn -->
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='video-corn' style="display: none">
               <a href="./projects/video-corn.html"><img src="images/video-corn.jpg" class="img-fluid item-img" alt="video corn"></a>
               <div class="item-title">VideoCorn</div>
               <p>Online video shop web application made using Django & Boostrap. All the information provided by the application is obtained using The Movie Database API.</p>
               <a class="button col-auto" href="./projects/video-corn.html" title="Read More">Read More</a>
               <a class="button col-auto" href="https://github.com/yerai/DAW-VideoCorn" title="View on Github" target="_blank">View on Github</a>
-            </div> --> 
+            </div>
 
-            <!-- Movie Interactive Visual Analysis Tool 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='analysis-tool'>
+            <!-- Movie Interactive Visual Analysis Tool -->
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='analysis-tool' style="display: none">
               <a href="./projects/analysis-tool.html"><img src="images/rstudio.jpg" class="img-fluid item-img" alt="Movie Interactive Visual Analysis Tool"></a>
               <div class="item-title">Movie Interactive Visual Analysis Tool</div>
               <p>Design and implementation of a Interactive Visual Analysis Tool focused on the movie industry using RStudio and Shiny.</p>
               <a class="button col-auto" href="./projects/analysis-tool.html" title="Read More">Read More</a>
               <a class="button col-auto" href="https://yerai.shinyapps.io/Movie-Interactive-Visual-Analysis-Tool/" title="Demo" target="_blank">Demo</a>
-            </div> --> 
+            </div> 
 
-            <!-- EIT Digital Newspaper 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='newspaper'>
+            <!-- EIT Digital Newspaper -->
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='newspaper' style="display: none">
               <a href="./projects/newspaper.html"><img src="images/newspaper.png" class="img-fluid item-img" alt="EIT Digital Newspaper Image"></a>
               <div class="item-title">EIT Digital Newspaper</div>
               <p>Newspaper web application with the typical functionalitites needed to publish and manage a newspaper web. Made using Boostrap & AngularJS.</p>
               <a class="button col-auto" href="./projects/newspaper.html" title="Read More">Read More</a>
               <a class="button col-auto" href="http://yerai.me/PUI-Newspaper/" title="Demo" target="_blank">Demo</a>
-            </div>--> 
+            </div>
 
             <!-- Beat of my Drum --> 
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='robot'>
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='robot' style="display: none">
               <a href="./projects/robot.html"><img src="images/robot.jpg" class="img-fluid item-img" alt="Robot Image"></a>
               <div class="item-title">Beat of my Drum</div>
               <p>Animated short choreographing a set of simple base shapes to elegantly come together as a robotic character that dances. Created using Autodesk Maya.</p>
@@ -161,20 +159,25 @@
               <a class="button col-auto" href="https://vimeo.com/364497650" title="Watch Video" target="_blank">Watch Video</a>
             </div>
 
-            <!-- 100Cards  
-            <div class="col-12 col-sm-4" data-aos="zoom-in" id='cards'>
+            <!-- 100Cards  -->
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='cards' style="display: none">
               <a href="https://www.100cards.io/"><img src="images/100cards.png" class="img-fluid item-img" alt="100 Cards Lading Page"></a>
               <div class="item-title">100Cards Landing Page</div>
               <p>Design and development of a responsive Landing Page for a fin-tech mobile application - including assets. Made using Wordpress and CSS.</p>
               <a class="button col-auto" href="https://www.100cards.io/" title="Demo" target="_blank">Demo</a>
-            </div> -->
+            </div> 
 
   				</div>
+  			
+  				<div class="col-sm-12 button see-more" onclick="seeMore()" id="see" data-aos="zoom-in">See more projects...</div>
+  			
+  				
   			</div>
+  			
   		</div>
 
       <!-- EXPERIENCE 
-      <div class="row h-100">
+      <div class="row h-100">˅ 
         <div class="col-12 offset-sm-1 col-sm-10 text-vertical">
           <div class="row">
 
@@ -203,9 +206,8 @@
 
   <!-- Categories -->
   <script>
-    var projects = ["nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","robot"];
-    var categories = ["all","pi","uxui","animation"];
-
+    var projects = ["nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","video-corn","analysis-tool","newspaper","robot","cards"];
+    var categories = ["all","pi","uxui","animation","programming"];
     function showPhysical() {
       hideAll();
       resetCategories();
@@ -215,7 +217,6 @@
       document.getElementById("pi").style.color = "black";
       AOS.refresh();
     }
-
     function showUxUi() {
       hideAll();
       resetCategories();
@@ -226,7 +227,6 @@
       document.getElementById("uxui").style.color = "black";
       AOS.refresh();
     }
-
     function showAnimation() {
       hideAll();
       resetCategories();
@@ -236,8 +236,7 @@
       document.getElementById("animation").style.color = "black";
       AOS.refresh();
     }
-
-    /*function showProgramming() {
+    function showProgramming() {
       hideAll();
       resetCategories();
       document.getElementById("affective-wear").style.display = "block";
@@ -248,8 +247,7 @@
       document.getElementById("programming").style.backgroundColor = "white";
       document.getElementById("programming").style.color = "black";
       AOS.refresh();
-    }*/
-
+    }
     function showAll(){
       for(i=0; i<projects.length; i++){
         var x = document.getElementById(projects[i]);
@@ -261,13 +259,27 @@
       AOS.refresh();
     }
 
+    function seeMore(){
+      for(i=0; i<projects.length; i++){
+        var x = document.getElementById(projects[i]);
+        x.style.display = "block";
+      }
+      resetCategories();
+      document.getElementById("all").style.backgroundColor = "white";
+      document.getElementById("all").style.color = "black";
+
+      document.getElementById("see").style.display = "none";
+      document.getElementById("cat").style.display = "block";
+
+      AOS.refresh();
+    }
+
     function hideAll(){
       for(i=0; i<projects.length; i++){
         var x = document.getElementById(projects[i]);
         x.style.display = "none";
       }
     }
-
     function resetCategories(){
       for(i=0; i<categories.length; i++){
         var x = document.getElementById(categories[i]);
@@ -275,7 +287,6 @@
         x.style.color = "white";
       }
     }
-
   </script>
    
 	<!-- AOS Animations -->
