@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/project-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="../plugins/aos/aos.css">
+
+    <!-- Title --> 
+    <title>Yerai</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png"/>
+
+    <!-- Carrusel -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--  Google Analytics -->
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667467-1"></script>
+  	<script>
+  	  window.dataLayer = window.dataLayer || [];
+  	  function gtag(){dataLayer.push(arguments);}
+  	  gtag('js', new Date());
+  	  gtag('config', 'UA-138667467-1');
+  	</script>
+
+  </head>
+
+  <style type="text/css">
+
+
+.ipad-container {
+  background-image:  url("../images/mockup.png");
+  background-position: center;
+  background-size: cover;
+  height: 314px;
+  width: 450px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: auto;
+  
+  margin:25px;
+}
+
+.ipad-screenshot-area {
+    position:absolute;
+    top:12px; 
+    left:32px; /
+    width:387px;
+    height:292px;
+    overflow:scroll;
+}
+.partner-img {
+  position: relative;
+  width: 386px;;
+  height: auto;
+  z-index: 2;
+}
+
+.columna-mitad{
+	width: 50%;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.ipad-container {
+		height: 244px;
+  		width: 350px;
+	}
+	.ipad-screenshot-area {
+		top:9px; 
+    	left:25px;
+		width:302px;
+    	height:226px;
+	}
+	.partner-img {
+		width: 302px;
+	}
+
+	.columna-mitad{
+		width: 100%;
+	}	
+}
+
+@media (max-width: 480px) {
+	.ipad-container {
+		height: 209px;
+  		width: 300px;
+  		margin: 20px;
+  		margin-bottom: 10px;	
+	}
+	.ipad-screenshot-area {
+		top:8px; 
+    	left:21px;
+		width:258px;
+    	height:195px;
+	}
+	.partner-img {
+		width: 258px;
+	}
+	
+}
+
+/**/
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+  </style>
+
+
+  <body>
+
+
+  	<div class="row">
+  		<div class="col-12 offset-sm-1 col-sm-10">
+
+        <div class="col-12">
+			<a href="../index.html#safe-land">
+				<div class="go-back" data-aos="zoom-in">< Go back</div>
+			</a>
+        </div>
+
+  			<div class="section-title col-12 col-sm-10" data-aos="zoom-in">Safe Land</div>
+
+  			<div class="col-12 col-sm-8" data-aos="zoom-in">
+		         <div class="col-12">
+		            <div class="row">
+		              <a class="button col-auto" href="https://www.figma.com/proto/Fl54CSOKxPP1fXBe681FFE/Satetify?node-id=7%3A2&viewport=-485%2C-762%2C0.3011147975921631&scaling=scale-down" title="Test Prototype">Test Prototype</a>
+		            </div>
+		          </div>
+
+				  <p>Safe Land is the outcome of a one day project done during Junction's Hackathon in Helsinki. For this event, we decided to work on the challenge proposed by Ericsson: Security Awareness for Kids. The project was made in collaboration with Leire Litwin and Maria Serralha at Aalto University, where the event took place. </p>
+			</div>
+
+			<div class="col-12 col-sm-8" data-aos="zoom-in">
+				<div class="sub-title">The challenge</div>
+				  <p>Security in the connected world is important for all of us. Security threats are everywhere, and we all are targets. It is easy to fall for scams and make bad security decisions (ending up on bad websites, installing malicious applications, leaking sensitive personal information, etc ).</p>
+				  <p>Kids are particularly challenging as a target group, requiring exemplary usability and engagement. Therefore, what works with kids, works with all of us. The purpose of this challenge is to strengthen the users’ resilience against these threats through improved awareness. </p>
+			</div>
+
+			<div class="col-12 col-sm-8" data-aos="zoom-in">
+				<div class="sub-title">The solution</div>
+				  <p>Because of the increasing popularity of iPads and internet-connected devices at schools, we thought about designing a platform to help kids learn about the dangers of the internet. Safe Land was designed to be used during class, with the assistant of teachers. However, parents could also use the application with their kids at home. The platform consists of a series of lectures that are organized in categories.</p>
+			</div>
+
+	  	</div>
+  	</div>
+
+    <div class="container" data-aos="zoom-in">
+    	<div class="row">
+    		<div class="columna-mitad">
+    			<div class="ipad-container">
+   					<div class="ipad-screenshot-area">
+       					<img src="../images/sl-img-1.png"  class="partner-img">
+   					</div>
+				</div>
+    		</div>
+    		<div class="columna-mitad">
+    			<div class="ipad-container">
+   					<div class="ipad-screenshot-area">
+       					<img src="../images/sl-img-2.png"  class="partner-img">
+   					</div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="row">
+  		<div class="col-12 offset-sm-1 col-sm-10">
+
+			<div class="col-12 col-sm-8" data-aos="zoom-in">
+				  <p>In every lecture, the kid is introduced to an internet topic that is explained using an easy to understand language. Because of this, we believe parents could also benefit and learn using the app, especially those with moderate IT knowledge. </p>
+			</div>
+
+	  	</div>
+  	</div>
+
+  	<div class="container" data-aos="zoom-in">
+    	<div class="row">
+    		<div class="columna-mitad">
+    			<div class="ipad-container">
+   					<div class="ipad-screenshot-area">
+       					<img src="../images/sl-img-3.png"  class="partner-img">
+   					</div>
+				</div>
+    		</div>
+    		<div class="columna-mitad">
+    			<div class="ipad-container">
+   					<div class="ipad-screenshot-area">
+       					<img src="../images/sl-img-4.png"  class="partner-img">
+   					</div>
+				</div>
+    		</div>
+    		<div style="width: 25%"></div>
+    		<div class="columna-mitad">
+    			<div class="ipad-container">
+   					<div class="ipad-screenshot-area">
+       					<img src="../images/sl-img-5.png"  class="partner-img">
+   					</div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="container" data-aos="zoom-in">
+    	<div class="row">
+    		<div style="width: 25%;"><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+    		<div style="width: 50%; text-align: center;">
+    			<div class="ipad-container" style="display: inline-block;">
+   					<div class="ipad-screenshot-area">
+       					<div class="mySlides">
+  							<img src="../images/sl-img-1.png" class="partner-img">
+						</div>
+						<div class="mySlides">
+  							<img src="../images/sl-img-2.png" class="partner-img">
+						</div>
+						<div class="mySlides">
+  							<img src="../images/sl-img-3.png" class="partner-img">
+						</div>
+   					</div>
+				</div>
+    		</div>
+    		<div style="width: 25%;"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+    		<div style="text-align:center">
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+    	</div>
+    </div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+	<!-- AOS Animations -->
+  	<script src="../plugins/aos/aos.js"></script>
+  	<script type="text/javascript">
+  		AOS.init({
+  			duration: 1200,
+  		});
+  	</script>
+
+  </body>
+
+</html>
