@@ -70,8 +70,17 @@
               <div class="button-2" onclick="showProgramming()" id="programming">Programming</div>
           </div>
        
+
+          <!-- Safe Land --> 
+            <div class="col-12 col-sm-4" data-aos="zoom-in" id='safe-land'>
+              <a href="./projects/salfe-land.html"><img src="images/safe-land.jpg" class="img-fluid item-img"></a>
+              <div class="item-title">Safe Land</div>
+              <p>One day project designing an iPad platform to teach kids about the dangers of the internet. Made using Figma during Junction 2019.</p>
+              <a class="button col-auto" href="./projects/safe-land.html" title="Read More">Read More</a>
+              <a class="button col-auto" href="https://www.figma.com/proto/Fl54CSOKxPP1fXBe681FFE/Satetify?node-id=7%3A2&viewport=-485%2C-762%2C0.3011147975921631&scaling=scale-down" title="Demo" target="_blank">Demo</a>
+            </div>
           
-			<!-- nets --> 
+			     <!-- nets --> 
             <div class="col-12 col-sm-4" data-aos="zoom-in" id='nets'>
               <a href="./projects/nets.html"><img src="images/climbing-nets.jpg" class="img-fluid item-img" alt="climbing nets prototype"></a>
               <div class="item-title">Climbing with lights</div>
@@ -208,7 +217,7 @@
 
   <!-- Categories -->
   <script>
-    var projects = ["nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","video-corn","analysis-tool","newspaper","robot","cards"];
+    var projects = ["safe-land","nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","video-corn","analysis-tool","newspaper","robot","cards"];
     var categories = ["all","pi","uxui","animation","programming"];
     function showPhysical() {
       hideAll();
@@ -222,6 +231,7 @@
     function showUxUi() {
       hideAll();
       resetCategories();
+      document.getElementById("safe-land").style.display = "block";
       document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
