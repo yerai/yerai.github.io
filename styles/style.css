@@ -3,6 +3,18 @@ html, body{
 	height: 100%; /* Makes page full screen */
 	background-color: black;
 	color: white;
+	scroll-behavior: smooth; 
+}
+
+.see-projects{
+	position: absolute; 
+	bottom:10%; 
+	left:50%;
+}
+
+.see-projects-arrow{
+	width: 20%; 
+	margin-right: -10%;
 }
 
 /* AUX */
@@ -127,6 +139,10 @@ html, body{
 	.exp-mobile{
 		margin-top: 40px;
 	}
+
+	.see-projects{
+	left:47%;
+}
 	
 }
 
