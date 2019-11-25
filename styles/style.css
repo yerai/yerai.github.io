@@ -52,6 +52,7 @@ html, body{
 .hi{
 	font-size: 30px;
 	font-weight: bold;
+	color: #4BAEA0;
 }
 
 /* Projects */
@@ -159,6 +160,10 @@ html, body{
 
 	.nav-items{
 		margin-top: 0px;  margin-right: 0px; padding: 0px;
+	}
+
+	.hi{
+		font-size: 20px;
 	}
 	
 }
