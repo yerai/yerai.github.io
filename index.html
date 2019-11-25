@@ -9,6 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <!-- Bosstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
@@ -35,27 +40,41 @@
 
   <body>
 
-	<!-- ABOUT ME --> 
-	<div class="row h-100">
-		<div class="col-12 text-vertical text-center">
-			<div class="row" data-aos="zoom-in">
-				<div class="about-me-title col-12">Yerai Zamorano</div>
-				<div class="about-me-text col-12">Human Computer Interaction and Design Master student | Computer Engineer</div>
-				<div class="about-me-buttons col-12"> 
-					<a class="button col-auto" href="mailto:yeerizg@gmail.com" title="Send email">Email</a>
-	  				<a class="button col-auto" href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
-	  				<a class="button col-auto" href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
-	      			<a class="button col-auto" href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+  	<nav class="navbar navbar-expand-sm navbar-light justify-content-between" data-aos="zoom-in">
+  		<a class="navbar-brand offset-sm-1" href="#">Yerai Zamorano</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse col-auto nav-items" id="navbarToggler">
+		    <ul class="navbar-nav ml-auto">
+      			<li class="nav-item">
+        			<a class="nav-link"  href="mailto:yeerizg@gmail.com">Email</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link"  href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+      			</li>
+    		</ul>
+		</div>
+	</nav>
+
+	<div class="row" data-aos="zoom-in">
+		<div class="col-12 offset-sm-1 col-sm-10">
+			<div class="row">
+				<div class="col-8">
+					<div class="hi">Hi There! 🙋🏻‍♂️ </div>
+					<p>I am a former student completing a double degree EIT Digital Master program in Human-Computer Interaction and Design. At the moment, I am most interested in User Experience and Interaction, and I would love to be able to work on these areas in the future.</p>
 				</div>
 			</div>
 		</div>
-
-		<!--<div class="see-projects">
-			<a href="#projects">
-				<img src="./images/see-projects.png" class="see-projects-arrow">
-			</a>
-		</div> -->
 	</div>
+	
        			
   	<div class="row section-project" id="projects">
 		<div class="col-12 offset-sm-1 col-sm-10">
@@ -65,7 +84,7 @@
 
 		        <!-- Categories --> 
 		        <div class="col-12" data-aos="zoom-in" id="cat"> 
-		            <div class="button-2" onclick="showFeatured()" style="background-color: white; color:black" id="all">Featured</div>
+		            <div class="button-2" onclick="showFeatured()" style="background-color: #3E3E3E; color:white" id="all">Featured</div>
 		            <div class="button-2" onclick="showPhysical()" id="pi">Physical Interaction</div>
 		            <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
 		            <div class="button-2" onclick="showAnimation()" id="animation">Animation</div>
@@ -73,125 +92,136 @@
 		         </div>
 
 	          	<!-- Safe Land --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='safe-land'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='safe-land'>
 	              <a href="./projects/safe-land.html"><img src="images/safe-land.jpg" class="img-fluid item-img"></a>
 	              <div class="item-title">Safe Land</div>
 	              <p>One day project designing an iPad platform to teach kids about the dangers of the internet. Made using Figma during Junction 2019.</p>
-	              <a class="button col-auto" href="./projects/safe-land.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://www.figma.com/proto/Fl54CSOKxPP1fXBe681FFE/Satetify?node-id=7%3A2&viewport=-485%2C-762%2C0.3011147975921631&scaling=scale-down" title="Demo" target="_blank">Demo</a>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="./projects/safe-land.html" title="Read More">Read More</a>
+	              	<a class="button col-auto" href="https://www.figma.com/proto/Fl54CSOKxPP1fXBe681FFE/Satetify?node-id=7%3A2&viewport=-485%2C-762%2C0.3011147975921631&scaling=scale-down" title="Demo" target="_blank">Demo</a>
+	              </div>
 	            </div>
       
 				<!-- nets --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='nets'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='nets'>
 	              <a href="./projects/nets.html"><img src="images/climbing-nets.jpg" class="img-fluid item-img" alt="climbing nets prototype"></a>
 	              <div class="item-title">Climbing with lights</div>
 	              <p>Design and construction of an interactive climbing net prototype meant for dark and cold playgrounds using lights and music. Made using NeoPixels and Arduino Uno.</p>
-	              <a class="button col-auto" href="./projects/nets.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://vimeo.com/368869269" title="Watch Video" target="_blank">Watch Video</a>
+	              <div class="mt-auto">	
+	              	<a class="button col-auto" href="./projects/nets.html" title="Read More">Read More</a>
+	              	<a class="button col-auto" href="https://vimeo.com/368869269" title="Watch Video" target="_blank">Watch Video</a>
+	              </div>
 	            </div>
 
 	            <!-- flowlight --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='flowlight'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='flowlight'>
 	              <a href="./projects/flow-light.html"><img src="images/flowLight.png" class="img-fluid item-img" alt="flolight lamp image in color blue"></a>
 	              <div class="item-title">Flowlight</div>
 	              <p>Four days small project to explore physical interaction and technology related to interactive lightning. Made using NeoPixels, Arduino Uno and ultrasonic sensors.</p>
-	              <a class="button col-auto" href="./projects/flow-light.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://vimeo.com/364253366" title="Watch Video" target="_blank">Watch Video</a>
+		          <div class="mt-auto">
+		              <a class="button col-auto" href="./projects/flow-light.html" title="Read More">Read More</a>
+		              <a class="button col-auto" href="https://vimeo.com/364253366" title="Watch Video" target="_blank">Watch Video</a>
+		          </div>
 	            </div>
 
 	            <!-- Mobile Ticket App --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='mobile-ticket'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='mobile-ticket'>
 	              <a href="./projects/mobile-ticket.html"><img src="images/mobile-ticket.jpg" class="img-fluid item-img" alt="Mobile Ticket app screenshots"></a>
 	              <div class="item-title">Mobile Ticket App</div>
 	              <p>Ideation and design of a mobile application to improve the public transit experience in Madrid. Made using Justinmind and insights gathered from user research.</p>
-	              <a class="button col-auto" href="./projects/mobile-ticket.html" title="Read More">Read More</a>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="./projects/mobile-ticket.html" title="Read More">Read More</a>
+	              </div>
 	            </div>
 
 	            <!-- voluntary work --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='voluntary-work'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='voluntary-work'>
 	              <!-- Fill link of image!  --> 
 	              <a href="./projects/voluntary-work.html"> <img src="images/voluntary-work.jpg" class="img-fluid item-img" alt="climbing nets prototype"></a>
 	              <div class="item-title">Voluntary Work</div>
 	              <p>Design and development of an Android mobile application following a user center design approach to connect people willing to offer and receive help.</p>
-	              <a class="button col-auto" href="./projects/voluntary-work.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://github.com/yerai/voluntary-work" title="View on Github" target="_blank">View on Github</a>
+		           <div class="mt-auto">  
+		              <a class="button col-auto" href="./projects/voluntary-work.html" title="Read More">Read More</a>
+		              <a class="button col-auto" href="https://github.com/yerai/voluntary-work" title="View on Github" target="_blank">Github</a>
+		          </div>
 	            </div>
 
 	            <!-- AffectiveWear --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='affective-wear'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='affective-wear'>
 	              <a href="./projects/affective-wear.html"><img src="images/affective-wear.jpg" class="img-fluid item-img" alt="Affectivewear Image"></a>
 	              <div class="item-title">Affective Wear</div>
 	              <p>Cross-platform application service that classifies, stores and displays facial expressions recorded by a wearable device developed by the Interactive Media Lab.</p>
-	              <a class="button col-auto" href="./projects/affective-wear.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://www.youtube.com/watch?v=9PMzpsDg518" title="Watch Video" target="_blank">Watch Video</a>
+	              <div class="mt-auto">
+		              <a class="button col-auto" href="./projects/affective-wear.html" title="Read More">Read More</a>
+		              <a class="button col-auto" href="https://www.youtube.com/watch?v=9PMzpsDg518" title="Watch Video" target="_blank">Watch Video</a>
+		          </div>
 	            </div>
 
 	            <!-- The Monster Project --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='monster-project' style="display: none">
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='monster-project' style="display: none">
 	              <a href="./projects/monster-project.html"><img src="images/monster-project.jpg" class="img-fluid item-img" alt="Character Design"></a>
 	              <div class="item-title">The Monster Project</div>
 	              <p>Production and design of a CG character inspired by a child's drawing from the Hanham Abbot School Gallery. Created using Autodesk Maya.</p>
-	              <a class="button col-auto" href="./projects/monster-project.html" title="Read More">Read More</a>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="./projects/monster-project.html" title="Read More">Read More</a>
+	              </div>
 	            </div>
 
-	            <!-- Videocorn -->
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='video-corn' style="display: none">
+	           	<!-- Beat of my Drum --> 
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='robot' style="display: none">
+	              <a href="./projects/robot.html"><img src="images/robot.jpg" class="img-fluid item-img" alt="Robot Image"></a>
+	              <div class="item-title">Beat of my Drum</div>
+	              <p>Animated short choreographing a set of simple base shapes to elegantly come together as a robotic character that dances. Created using Autodesk Maya.</p>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="./projects/robot.html" title="Read More">Read More</a>
+	              	<a class="button col-auto" href="https://vimeo.com/364497650" title="Watch Video" target="_blank">Watch Video</a>
+	              </div>
+	            </div>
+
+	            <!-- Videocorn 
+	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='video-corn' style="display: none">
 	              <a href="./projects/video-corn.html"><img src="images/video-corn.jpg" class="img-fluid item-img" alt="video corn"></a>
 	              <div class="item-title">VideoCorn</div>
 	              <p>Online video shop web application made using Django & Boostrap. All the information provided by the application is obtained using The Movie Database API.</p>
 	              <a class="button col-auto" href="./projects/video-corn.html" title="Read More">Read More</a>
 	              <a class="button col-auto" href="https://github.com/yerai/DAW-VideoCorn" title="View on Github" target="_blank">View on Github</a>
-	            </div>
+	            </div> -->
 
-	            <!-- Movie Interactive Visual Analysis Tool -->
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='analysis-tool' style="display: none">
+	            <!-- Movie Interactive Visual Analysis Tool 
+	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='analysis-tool' style="display: none">
 	              <a href="./projects/analysis-tool.html"><img src="images/rstudio.jpg" class="img-fluid item-img" alt="Movie Interactive Visual Analysis Tool"></a>
 	              <div class="item-title">Movie Interactive Visual Analysis Tool</div>
 	              <p>Design and implementation of a Interactive Visual Analysis Tool focused on the movie industry using RStudio and Shiny.</p>
 	              <a class="button col-auto" href="./projects/analysis-tool.html" title="Read More">Read More</a>
 	              <a class="button col-auto" href="https://yerai.shinyapps.io/Movie-Interactive-Visual-Analysis-Tool/" title="Demo" target="_blank">Demo</a>
-	            </div> 
+	            </div>  -->
 
-	            <!-- EIT Digital Newspaper -->
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='newspaper' style="display: none">
+	            <!-- EIT Digital Newspaper 
+	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='newspaper' style="display: none">
 	              <a href="./projects/newspaper.html"><img src="images/newspaper.png" class="img-fluid item-img" alt="EIT Digital Newspaper Image"></a>
 	              <div class="item-title">EIT Digital Newspaper</div>
 	              <p>Newspaper web application with the typical functionalitites needed to publish and manage a newspaper web. Made using Boostrap & AngularJS.</p>
 	              <a class="button col-auto" href="./projects/newspaper.html" title="Read More">Read More</a>
 	              <a class="button col-auto" href="http://yerai.me/PUI-Newspaper/" title="Demo" target="_blank">Demo</a>
-	            </div>
+	            </div> -->
 
-	            <!-- Beat of my Drum --> 
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='robot' style="display: none">
-	              <a href="./projects/robot.html"><img src="images/robot.jpg" class="img-fluid item-img" alt="Robot Image"></a>
-	              <div class="item-title">Beat of my Drum</div>
-	              <p>Animated short choreographing a set of simple base shapes to elegantly come together as a robotic character that dances. Created using Autodesk Maya.</p>
-	              <a class="button col-auto" href="./projects/robot.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://vimeo.com/364497650" title="Watch Video" target="_blank">Watch Video</a>
-	            </div>
 
-	            <!-- 100Cards  -->
-	            <div class="col-12 col-sm-4" data-aos="zoom-in" id='cards' style="display: none">
+	            <!-- 100Cards  
+	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='cards' style="display: none">
 	              <a href="https://www.100cards.io/"><img src="images/100cards.png" class="img-fluid item-img" alt="100 Cards Lading Page"></a>
 	              <div class="item-title">100Cards Landing Page</div>
 	              <p>Design and development of a responsive Landing Page for a fin-tech mobile application - including assets. Made using Wordpress and CSS.</p>
 	              <a class="button col-auto" href="https://www.100cards.io/" title="Demo" target="_blank">Demo</a>
-	            </div> 
+	            </div> -->
 
 			</div>		
 		</div>		
 	</div>
 
-  <!-- Scroll to Projects -->
-  <script>
-  	function goToProjects() {
-  		document.getElementById("projects").scrollIntoView();
-  	}
-  </script>
   <!-- Categories -->
   <script>
-    var projects = ["safe-land","nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work"/*,"video-corn","analysis-tool","newspaper"*/,"robot"/*,"cards"*/];
-    var categories = ["all","pi","uxui","animation",/*"programming"*/];
+    var projects = ["safe-land","nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","robot"];
+    var categories = ["all","pi","uxui","animation"];
 
     function showFeatured() {
       hideAll();
@@ -202,8 +232,8 @@
       document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
-      document.getElementById("all").style.backgroundColor = "white";
-      document.getElementById("all").style.color = "black";
+      document.getElementById("all").style.backgroundColor = "#3E3E3E";
+      document.getElementById("all").style.color = "white";
       AOS.refresh();
     }
 
@@ -212,10 +242,11 @@
       resetCategories();
       document.getElementById("nets").style.display = "block";
       document.getElementById("flowlight").style.display = "block";
-      document.getElementById("pi").style.backgroundColor = "white";
-      document.getElementById("pi").style.color = "black";
+      document.getElementById("pi").style.backgroundColor = "#3E3E3E";
+      document.getElementById("pi").style.color = "white";
       AOS.refresh();
     }
+
     function showUxUi() {
       hideAll();
       resetCategories();
@@ -223,8 +254,8 @@
       document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
-      document.getElementById("uxui").style.backgroundColor = "white";
-      document.getElementById("uxui").style.color = "black";
+      document.getElementById("uxui").style.backgroundColor = "#3E3E3E";
+      document.getElementById("uxui").style.color = "white";
       AOS.refresh();
     }
     function showAnimation() {
@@ -232,11 +263,12 @@
       resetCategories();
       document.getElementById("monster-project").style.display = "block";
       document.getElementById("robot").style.display = "block";
-      document.getElementById("animation").style.backgroundColor = "white";
-      document.getElementById("animation").style.color = "black";
+      document.getElementById("animation").style.backgroundColor = "#3E3E3E";
+      document.getElementById("animation").style.color = "white";
       AOS.refresh();
     }
-    function showProgramming() {
+    
+    /*function showProgramming() {
       hideAll();
       resetCategories();
       document.getElementById("affective-wear").style.display = "block";
@@ -244,32 +276,36 @@
       document.getElementById("analysis-tool").style.display = "block";
       document.getElementById("newspaper").style.display = "block";
       document.getElementById("cards").style.display = "block";
-      document.getElementById("programming").style.backgroundColor = "white";
-      document.getElementById("programming").style.color = "black";
+      document.getElementById("programming").style.backgroundColor = "#3E3E3E";
+      document.getElementById("programming").style.color = "white";
       AOS.refresh();
-    }
+    }*/
+
     function showAll(){
       for(i=0; i<projects.length; i++){
         var x = document.getElementById(projects[i]);
+        console.log("show: " + projects[i]);
         x.style.display = "block";
       }
       resetCategories();
-      document.getElementById("all").style.backgroundColor = "white";
-      document.getElementById("all").style.color = "black";
+      document.getElementById("all").style.backgroundColor = "#3E3E3E";
+      document.getElementById("all").style.color = "white";
       AOS.refresh();
     }
 
     function hideAll(){
       for(i=0; i<projects.length; i++){
         var x = document.getElementById(projects[i]);
+        console.log("hide: " + projects[i]);
         x.style.display = "none";
       }
     }
+
     function resetCategories(){
       for(i=0; i<categories.length; i++){
         var x = document.getElementById(categories[i]);
-        x.style.backgroundColor = "black";
-        x.style.color = "white";
+        x.style.backgroundColor = "white";
+        x.style.color = "#3E3E3E";
       }
     }
   </script>
