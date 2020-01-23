@@ -42,7 +42,31 @@
 
   	<nav class="navbar navbar-expand-sm navbar-light justify-content-between" data-aos="zoom-in">
   		<a class="navbar-brand offset-sm-1" href="#">Yerai Zamorano</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+
+
+  		<div class="col-auto nav-items hide-on-mobile">
+	  		<ul class="navbar-nav ml-auto">
+	      			<li class="nav-item">
+	        			<a class="nav-link"  href="mailto:yeerizg@gmail.com">Email</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link"  href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+	      			</li>
+	    	</ul>
+	    </div>
+
+	    <div class="col-auto nav-items show-on-mobile" id="hamburger">
+	    	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	    </div>
+
+
+		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -61,8 +85,18 @@
         			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
       			</li>
     		</ul>
-		</div>
+		</div> -->
 	</nav>
+
+	<div id="myNav" class="overlay">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="mailto:yeerizg@gmail.com">Email</a>
+			    <a href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
+			    <a href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+			    <a href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+			  </div>
+	</div>
 
 	<div class="row" data-aos="zoom-in">
 		<div class="col-12 offset-sm-1 col-sm-10">
@@ -309,6 +343,19 @@
       }
     }
   </script>
+
+  <!-- Mobile Navbar -->
+    <script>
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		  document.getElementById("hamburger").style.display = "none";
+		}
+
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		  document.getElementById("hamburger").style.display = "block";
+		}
+	</script>
    
 	<!-- AOS Animations -->
   	<script src="plugins/aos/aos.js"></script>

@@ -129,6 +129,59 @@ html, body{
 	padding-top: 8px;
 }
 
+/* Mobile Navbar */
+  	.overlay {
+	  height: 0%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: rgb(255,255,255);
+	  background-color: rgba(255,255,255, 0.9);
+	  overflow-y: hidden;
+	  transition: 0.5s;
+	}
+
+	.overlay-content {
+	  position: relative;
+	  top: 25%;
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 30px;
+	  font-family: 'Raleway', sans-serif;
+	}
+
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #5B5B5B;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlay .closebtn {
+	 position: absolute;
+	 top: -1.5%;
+	 right: 2.8%;
+	 font-size: 60px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .overlay {overflow-y: auto;}
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	  }
+	}
+
+	.show-on-mobile{
+		display: none;
+	}
+
 
 
 /* Mobile */
@@ -164,6 +217,14 @@ html, body{
 
 	.hi{
 		font-size: 20px;
+	}
+
+	.hide-on-mobile{
+		display: none;
+	}
+
+	.show-on-mobile{
+		display: block;
 	}
 	
 }
