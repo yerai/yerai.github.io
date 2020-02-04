@@ -119,7 +119,7 @@
 		        <!-- Categories --> 
 		        <div class="col-12" data-aos="zoom-in" id="cat"> 
 		            <div class="button-2" onclick="showFeatured()" style="background-color: #3E3E3E; color:white" id="all">Featured</div>
-		            <div class="button-2" onclick="showPhysical()" id="pi">Physical Interaction</div>
+		            <div class="button-2" onclick="showPhysical()" id="pi">Interaction</div>
 		            <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
 		            <div class="button-2" onclick="showAnimation()" id="animation">Animation</div>
 		            <!--<div class="button-2" onclick="showProgramming()" id="programming">Programming</div>-->
@@ -158,8 +158,19 @@
 		          </div>
 	            </div>
 
+	           	<!-- AR-Chess --> 
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='archess'>
+	              <a href="./projects/ar-chess.html"><img src="images/arc-img-1.jpg" class="img-fluid item-img"></a>
+	              <div class="item-title">AR Chess</div>
+	              <p>Design and development of an interactive AR mobile game using two different modalities to improve chess' learning experience. Made using Unity.</p>
+		          <div class="mt-auto">
+		              <a class="button col-auto" href="./projects/ar-chess.html" title="Read More">Read More</a>
+		              <a class="button col-auto" href="https://vimeo.com/386109419" title="Watch Video" target="_blank">Watch Video</a>
+		          </div>
+	            </div>
+
 	            <!-- Mobile Ticket App --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='mobile-ticket'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='mobile-ticket' style="display: none">
 	              <a href="./projects/mobile-ticket.html"><img src="images/mobile-ticket.jpg" class="img-fluid item-img" alt="Mobile Ticket app screenshots"></a>
 	              <div class="item-title">Mobile Ticket App</div>
 	              <p>Ideation and design of a mobile application to improve the public transit experience in Madrid. Made using Justinmind and insights gathered from user research.</p>
@@ -254,7 +265,7 @@
 
   <!-- Categories -->
   <script>
-    var projects = ["safe-land","nets","flowlight","mobile-ticket","affective-wear","monster-project","voluntary-work","robot"];
+    var projects = ["safe-land","nets","flowlight","archess","mobile-ticket","affective-wear","monster-project","voluntary-work","robot"];
     var categories = ["all","pi","uxui","animation"];
 
     function showFeatured() {
@@ -262,8 +273,9 @@
       resetCategories();
       document.getElementById("nets").style.display = "block";
       document.getElementById("flowlight").style.display = "block";
+      document.getElementById("archess").style.display = "block";
       document.getElementById("safe-land").style.display = "block";
-      document.getElementById("mobile-ticket").style.display = "block";
+      //document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
       document.getElementById("all").style.backgroundColor = "#3E3E3E";
@@ -276,6 +288,7 @@
       resetCategories();
       document.getElementById("nets").style.display = "block";
       document.getElementById("flowlight").style.display = "block";
+      document.getElementById("archess").style.display = "block";
       document.getElementById("pi").style.backgroundColor = "#3E3E3E";
       document.getElementById("pi").style.color = "white";
       AOS.refresh();

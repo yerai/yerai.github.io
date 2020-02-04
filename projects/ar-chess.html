@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/project-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="../plugins/aos/aos.css">
+
+    <!-- Title --> 
+    <title>Yerai</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png"/>
+
+    <!--  Google Analytics -->
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667467-1"></script>
+  	<script>
+  	  window.dataLayer = window.dataLayer || [];
+  	  function gtag(){dataLayer.push(arguments);}
+  	  gtag('js', new Date());
+  	  gtag('config', 'UA-138667467-1');
+  	</script>
+
+  </head>
+
+  <body>
+
+
+  	<div class="row">
+  		<div class="col-12 offset-sm-1 col-sm-10">
+
+        <div class="col-12">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-12 col-sm-8">
+              <img src="../images/arc-img-1.jpg" class="img-fluid main-img">
+            </div>
+            <div class="col-12 col-sm-4">
+              <a href="../index.html#archess">
+                <div class="go-back" data-aos="zoom-in">< Go back</div>
+              </a>
+              <div class="section-title col-12 col-sm-10" data-aos="zoom-in">AR Chess</div>
+              <div class="col-12">
+                <div class="row">
+                  <a class="button col-auto" href="https://vimeo.com/386109419" title="Watch Video">Watch Video</a>
+                  <a class="button col-auto" href="https://github.com/yerai/AR-Chess" title="View on Github">View on Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  			<div class="col-12 col-sm-8" data-aos="zoom-in">
+				  <p>AR-Chess is the outcome of the final project from the Multimodal Interaction course at KTH University. The main objective was to design and develop an interactive solution involving two different modalities to help users learn how to master chess.</p>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <div class="sub-title">Problem</div>
+          <p>Playing chess is considered to be a tough game to master. Even though chess only consists of six different pieces that have different moves, there are many possible scenarios to attack and defend the King to win the game. Despite this, chess is not designed to be played by solely a handful of people, and it is this misconception that makes people afraid to play chess. So, how to help people to not only enjoy and play chess but to master it? According to Lev Vygotsky, a Russian psychologist who introduced the concept of Zone Proximal Development (ZPD) in 1978, to acquire a new skill, people need to be guided by someone more knowledgeable or skilled.</p>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <p>For many years, chess players have relied on chess problems to improve their problem-solving capabilities. A chess problem is a puzzle set by the composer using chess pieces on a chessboard, which presents the solver with a particular task. For instance, a position may be given with the instruction that White is to move first and checkmate Black in two moves against any possible defense.</p>
+        </div>
+
+        <div class="col-12">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-2.jpg" class="img-fluid main-img">
+              <div class="caption text-center">Initial scenario</div>
+            </div> 
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-3.jpg" class="img-fluid main-img">
+              <div class="caption text-center">First move</div>
+            </div> 
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-4.jpg" class="img-fluid main-img">
+              <div class="caption text-center">Checkmate</div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <div class="sub-title">Proposal</div>
+          <p>AR-Chess is an Augmented Reality chess game that presents 3D mate in two problems to solve. To help users understand and resolve these complex puzzles, the application will provide the user hints using either sound or haptics modalities along with visual cues. </p>
+        </div>
+
+        <div class="col-12">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-12 col-sm-6">
+              <img src="../images/arc-img-5.png" class="img-fluid main-img">
+            </div> 
+            <div class="col-12 col-sm-6">
+              <img src="../images/arc-img-6.png" class="img-fluid main-img">
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <p>The application was made using Unity and allows users to play two different mate in two problems by pointing the camera at the desired problem's target. This target is identified using the Vuforia Engine software, which triggers the 3D Model of the chessboard and its pieces when the smartphone camera is directed towards a marker on a flat surface.</p>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <p>For each problem, two versions were developed: one using sound to try to help users find the pieces that solve the problem and the other is using vibration. For the sound version, the Unity Audio Component was used. The component was configured to have a spatial 3D blend, setting up an area in which upon entry, the sound will be triggered. For the vibration version, the Collider Component was used to trigger a C# script in charge of the vibration whenever the AR Camera collided with the object desired. </p>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <div class="sub-title">Evaluation</div>
+          <p>To evaluate the application, an A/B testing between subjects was performed. This was done to avoid uses learning how to solve the puzzle in with the first version and obtain better results during the second trial. In total, eight participants were asked to evaluate the system: four tested the sound version while the other four used the haptics variation. Every participant was asked to follow the think-aloud protocol, which allowed them to express their thoughts and decisions. Upon finishing the task, which consisted of solving two mate in two problems, a semi-structured interview was carried out. Measurements of the time taken to perform the task were also recorded.</p>
+        </div>
+
+        <div class="col-12">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-8.jpg" class="img-fluid main-img">
+            </div> 
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-9.jpg" class="img-fluid main-img">
+            </div> 
+            <div class="col-12 col-sm-4">
+              <img src="../images/arc-img-10.jpg" class="img-fluid main-img">
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <div class="sub-title">Results</div>
+          <p>Regarding the quantitative analysis, all participants managed to finish the task before the threshold of fifteen minutes. On average, subjects obtained better results when using the haptics version for both puzzles. Also, participants were able to solve the second problem faster in both versions (sound and haptics). </p>
+        </div>
+
+        <div class="col-12">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-12 col-sm-6">
+              <img src="../images/arc-img-11.png" class="img-fluid main-img">
+            </div> 
+        </div>
+
+        <div class="col-12 col-sm-8" data-aos="zoom-in">
+          <p>Looking at the interviews, participants weren't able to accurately locate the key piece to solve the puzzle using the sound or vibration. However, they managed to narrow the possibilities to a small area of the chessboard. Besides, some subjects found the sound distracting, preventing them from concentrating on the problem. </p>
+        </div>
+
+        
+
+
+      <div class="col-12" data-aos="zoom-in">
+          <div style="padding:56.25% 0 0 0;position:relative; margin-top: 50px;"><iframe src="https://player.vimeo.com/video/386109419?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+
+      <div class="container" style="margin-top: 10px;padding-left: 30px;">
+          <div class="row go-back">
+            <a href="../index.html#archess"><div class="go-back">< Go back</div></a>
+          </div>
+        </div>
+
+      </div>
+
+  	</div>
+
+	<!-- AOS Animations -->
+  	<script src="../plugins/aos/aos.js"></script>
+  	<script type="text/javascript">
+  		AOS.init({
+  			duration: 1200,
+  		});
+  	</script>
+
+  </body>
+
+</html>
