@@ -121,7 +121,7 @@
 		            <div class="button-2" onclick="showFeatured()" style="background-color: #3E3E3E; color:white" id="all">Featured</div>
 		            <div class="button-2" onclick="showPhysical()" id="pi">Interaction</div>
 		            <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
-		            <div class="button-2" onclick="showAnimation()" id="animation">Animation</div>
+		            <div class="button-2" onclick="showAnimation()" id="animation">3D Modeling</div>
 		            <!--<div class="button-2" onclick="showProgramming()" id="programming">Programming</div>-->
 		         </div>
 
@@ -209,6 +209,17 @@
 	              <p>Production and design of a CG character inspired by a child's drawing from the Hanham Abbot School Gallery. Created using Autodesk Maya.</p>
 	              <div class="mt-auto">
 	              	<a class="button col-auto" href="./projects/monster-project.html" title="Read More">Read More</a>
+	              </div>
+	            </div>
+
+	            <!-- Low-Poly Treasure Island --> 
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='poly-island' style="display: none">
+	              <a href="./projects/poly-island.html"><img src="images/poly-island.png" class="img-fluid item-img" alt=""></a>
+	              <div class="item-title">Low-Poly Treasure Island</div>
+	              <p>Modeling, shading, and rendering of a small low-poly 3D scene of an island using Blender. </p>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="./projects/poly-island.html" title="Read More">Read More</a>
+	              	<a class="button col-auto" href="https://p3d.in/9bVsC" title="Explore 3D Model" target="_blank">Explore 3D Model</a>
 	              </div>
 	            </div>
 
@@ -310,6 +321,7 @@
       resetCategories();
       document.getElementById("monster-project").style.display = "block";
       document.getElementById("robot").style.display = "block";
+      document.getElementById("poly-island").style.display = "block";
       document.getElementById("animation").style.backgroundColor = "#3E3E3E";
       document.getElementById("animation").style.color = "white";
       AOS.refresh();
