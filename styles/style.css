@@ -7,7 +7,7 @@ html, body{
 
 /* NavBar */
 .navbar-light .navbar-brand {
-    font-size: 45px;
+  font-size: 45px;
 	color: #3E3E3E;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
@@ -105,6 +105,12 @@ html, body{
     color: #3E3E3E;
 }
 
+/* Featured button */
+.featured-btn{
+	background-color: #3E3E3E;
+	color:white;
+}
+
 /* Make buttons at same heigh work */
 .d-flex[style*="display:none"], .d-flex[style*="display: none"] {
     display:none !important;
@@ -185,6 +191,7 @@ html, body{
 
 
 /* Mobile */
+
 @media (max-width: 840px) {
 	
 	.navbar-light .navbar-brand {
@@ -227,5 +234,72 @@ html, body{
 		display: block;
 	}
 	
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  html, body{
+	background-color: #121212;
+	color: #FFFFFF;
+}
+
+.navbar-light .navbar-brand:hover {
+    color:  #FFFFFF;
+}
+
+.navbar-light .navbar-brand {
+	color: #FFFFFF;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255,.5); 
+    border-color: #121212;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255,.7);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255,.5); 
+}
+
+.section-name{
+	color: #FFFFFF;
+}
+
+.button {
+    background-color: #121212;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #121212;
+    border-color: #121212;
+}
+
+.button-2 {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.featured-btn{
+	background-color: #FFFFFF;
+	color:#121212;
+}
+
+.item-title{
+	color: #FFFFFF;
+}
+
+.overlay {
+  background-color: rgb(18, 18, 18);
+}
+
+.overlay a {
+  color: #FFFFFF;
+}
+
 }
 
