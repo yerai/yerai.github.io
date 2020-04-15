@@ -111,6 +111,16 @@ html, body{
 	color:white;
 }
 
+.selected{
+	background-color: #121212;
+	color: #FFFFFF;
+}
+
+.un-selected{
+	background-color: #FFFFFF;
+	color: #121212;
+}
+
 /* Make buttons at same heigh work */
 .d-flex[style*="display:none"], .d-flex[style*="display: none"] {
     display:none !important;
@@ -298,6 +308,16 @@ html, body{
 
 .overlay a {
   color: #FFFFFF;
+}
+
+.selected{
+	background-color: #FFFFFF;
+	color: #121212;
+}
+
+.un-selected{
+	background-color: #121212;
+	color: #FFFFFF;
 }
 
 }

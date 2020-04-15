@@ -299,13 +299,17 @@
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
 
+      document.getElementById("all").classList.remove('un-selected');
+      document.getElementById("all").classList.add('selected');
+
+      /*
       if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
       	document.getElementById("all").style.backgroundColor = "#FFFFFF";
       	document.getElementById("all").style.color = "#121212";
 	  }else{
 	  	document.getElementById("all").style.backgroundColor = "#3E3E3E";
       	document.getElementById("all").style.color = "white";
-	  }
+	  }*/
       
       AOS.refresh();
     }
@@ -316,13 +320,18 @@
       document.getElementById("nets").style.display = "block";
       document.getElementById("flowlight").style.display = "block";
       document.getElementById("archess").style.display = "block";
-      if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
+
+      document.getElementById("pi").classList.remove('un-selected');
+      document.getElementById("pi").classList.add('selected');
+	  
+      
+      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
       	document.getElementById("pi").style.backgroundColor = "#FFFFFF";
       	document.getElementById("pi").style.color = "#121212";
 	  }else{
 	  	document.getElementById("pi").style.backgroundColor = "#3E3E3E";
       	document.getElementById("pi").style.color = "white";
-	  }
+	  }*/
       AOS.refresh();
     }
 
@@ -333,13 +342,16 @@
       document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
       document.getElementById("voluntary-work").style.display = "block";
-      if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
+
+      document.getElementById("uxui").classList.remove('un-selected');
+      document.getElementById("uxui").classList.add('selected');
+      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
       	document.getElementById("uxui").style.backgroundColor = "#FFFFFF";
       	document.getElementById("uxui").style.color = "#121212";
 	  }else{
 	  	document.getElementById("uxui").style.backgroundColor = "#3E3E3E";
       	document.getElementById("uxui").style.color = "white";
-	  }
+	  }*/
       AOS.refresh();
     }
     function showAnimation() {
@@ -348,13 +360,15 @@
       document.getElementById("monster-project").style.display = "block";
       document.getElementById("robot").style.display = "block";
       document.getElementById("poly-island").style.display = "block";
-      if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
+      document.getElementById("animation").classList.remove('un-selected');
+      document.getElementById("animation").classList.add('selected');
+      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
       	document.getElementById("animation").style.backgroundColor = "#FFFFFF";
       	document.getElementById("animation").style.color = "#121212";
 	  }else{
 	  	document.getElementById("animation").style.backgroundColor = "#3E3E3E";
       	document.getElementById("animation").style.color = "white";
-	  }
+	  }*/
       AOS.refresh();
     }
     
@@ -378,13 +392,16 @@
         x.style.display = "block";
       }
       resetCategories();
-      if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
+      document.getElementById("all").classList.remove('un-selected');
+      document.getElementById("all").classList.add('selected');
+
+      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
       	document.getElementById("all").style.backgroundColor = "#FFFFFF";
       	document.getElementById("all").style.color = "#121212";
 	  }else{
 	  	document.getElementById("all").style.backgroundColor = "#3E3E3E";
       	document.getElementById("all").style.color = "white";
-	  }
+	  }*/
       AOS.refresh();
     }
 
@@ -400,11 +417,11 @@
       for(i=0; i<categories.length; i++){
         var x = document.getElementById(categories[i]);
         if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-        	x.style.backgroundColor = "#121212";
-        	x.style.color = "#FFFFFF";
+        	x.classList.remove('selected');
+      		x.classList.add('un-selected');
 		}else{
-		  	x.style.backgroundColor = "white";
-	        x.style.color = "#3E3E3E";
+		  	x.classList.remove('selected');
+      		x.classList.add('un-selected');
 		}
        
       }
