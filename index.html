@@ -24,7 +24,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" id ="my-stylesheet" href="styles/light-style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
 
     <!-- Animations -->
@@ -47,7 +47,7 @@
 
   </head>
 
-  <body>
+  <body onload="checkMode();">
 
   	<nav class="navbar navbar-expand-sm navbar-light justify-content-between" data-aos="zoom-in">
   		<a class="navbar-brand offset-sm-1" href="#">Yerai Zamorano</a>
@@ -62,10 +62,19 @@
 	        			<a class="nav-link"  href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
 	      			</li>
 	      			<li class="nav-item">
-	        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+	        			<a class="nav-link"  href="https://www.behance.net/yerai" title="Visit Yerai's Behance" target="_blank">Behance</a>
 	      			</li>
+	      			<!--<li class="nav-item">
+	        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+	      			</li>-->
 	      			<li class="nav-item">
 	        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+	      			</li>
+	      			<li class="nav-item" id="light" style="display: none;">
+	        			<a class="nav-link"  onclick="light();" style="margin-right: 0px;"><img src="images/sun.png" style="width: 15px; height: 15px;"></a>
+	      			</li>
+	      			<li class="nav-item" id="dark" style="display: none;">
+	        			<a class="nav-link"  onclick="dark();" style="margin-right: 0px;"><img src="images/moon.png" style="width: 15px; height: 15px;"></a>
 	      			</li>
 	    	</ul>
 	    </div>
@@ -73,28 +82,6 @@
 	    <div class="col-auto nav-items show-on-mobile" id="hamburger">
 	    	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 	    </div>
-
-
-		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse col-auto nav-items" id="navbarToggler">
-		    <ul class="navbar-nav ml-auto">
-      			<li class="nav-item">
-        			<a class="nav-link"  href="mailto:yeerizg@gmail.com">Email</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link"  href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
-      			</li>
-    		</ul>
-		</div> -->
 	</nav>
 
 	<div id="myNav" class="overlay">
@@ -102,8 +89,11 @@
 			  <div class="overlay-content">
 			    <a href="mailto:yeerizg@gmail.com">Email</a>
 			    <a href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
-			    <a href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
+			    <a href="https://www.behance.net/yerai" title="Visit Yerai's Behance" target="_blank">Behance</a>
+			    <!--<a href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>-->
 			    <a href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
+			    <a class="nav-link" id="light2" style="display: none" onclick="light();">Day Mode</a>
+			    <a class="nav-link" id="dark2" style="display: none" onclick="dark();">Night Mode</a>
 			  </div>
 	</div>
 
@@ -111,7 +101,7 @@
 		<div class="col-12 offset-sm-1 col-sm-10">
 			<div class="row">
 				<div class="col-12 col-sm-8">
-					<div class="hi">Hi there! 🙋🏻‍♂️ </div>
+					<div class="hi">Hi there! <img style="width:28px; height:28px;" src="images/hi.png"></img></div>
 					<p>I am a student completing a double degree EIT Digital Master program in Human-Computer Interaction and Design. At the moment, I am most interested in User Experience and Interaction, and I would love to be able to work on these areas in the future.</p>
 				</div>
 			</div>
@@ -133,6 +123,16 @@
 		            <div class="button-2" onclick="showAnimation()" id="animation">3D Modeling</div>
 		            <!--<div class="button-2" onclick="showProgramming()" id="programming">Programming</div>-->
 		         </div>
+
+		        <!-- Apple Music --> 
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='apple-music'>
+	              <a href="https://www.behance.net/gallery/95505251/Apple-Music-Redesign"><img src="images/apple-music.jpg" class="img-fluid item-img w-100"></a>
+	              <div class="item-title">Apple Music Redesign</div>
+	              <p>Redesign of the Apple Music App aiming to reduce clutter and simplify the interface. Made with Sketch.</p>
+	              <div class="mt-auto">
+	              	<a class="button col-auto" href="https://www.behance.net/gallery/95505251/Apple-Music-Redesign" title="Read More">Read More</a>
+	              </div>
+	            </div>
 
 	          	<!-- Safe Land --> 
 	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='safe-land'>
@@ -285,7 +285,7 @@
 
   <!-- Categories -->
   <script>
-    var projects = ["safe-land","nets","flowlight","archess","mobile-ticket","affective-wear","monster-project","voluntary-work","robot", "poly-island"];
+    var projects = ["apple-music","safe-land","nets","flowlight","archess","mobile-ticket","affective-wear","monster-project","voluntary-work","robot", "poly-island"];
     var categories = ["all","pi","uxui","animation"];
 
     function showFeatured() {
@@ -297,7 +297,8 @@
       document.getElementById("safe-land").style.display = "block";
       //document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
-      document.getElementById("voluntary-work").style.display = "block";
+      //document.getElementById("voluntary-work").style.display = "block";
+      document.getElementById("apple-music").style.display = "block";
 
       document.getElementById("all").classList.remove('un-selected');
       document.getElementById("all").classList.add('selected');
@@ -338,6 +339,7 @@
     function showUxUi() {
       hideAll();
       resetCategories();
+      document.getElementById("apple-music").style.display = "block";
       document.getElementById("safe-land").style.display = "block";
       document.getElementById("mobile-ticket").style.display = "block";
       document.getElementById("affective-wear").style.display = "block";
@@ -438,6 +440,45 @@
 		function closeNav() {
 		  document.getElementById("myNav").style.height = "0%";
 		  document.getElementById("hamburger").style.display = "block";
+		}
+	</script>
+
+	<!-- Dark/Light button -->
+	<script type="text/javascript">
+		function light() {
+    		document.getElementById('my-stylesheet').href='styles/light-style.css';
+    		document.getElementById("light").style.display = "none";
+    		document.getElementById("light2").style.display = "none";
+    		document.getElementById("dark").style.display = "block";
+    		document.getElementById("dark2").style.display = "block";
+    		localStorage.Mode = "light";
+		}
+		function dark() {
+    		document.getElementById('my-stylesheet').href='styles/dark-style.css';
+    		document.getElementById("dark").style.display = "none";
+    		document.getElementById("dark2").style.display = "none";
+    		document.getElementById("light").style.display = "block";
+    		document.getElementById("light2").style.display = "block";
+    		localStorage.Mode = "dark";
+		}
+
+		function checkMode(){
+
+			var mode = localStorage.Mode.toString();
+  			if (mode == "light"){
+  				document.getElementById("light").style.display = "none";
+    			document.getElementById("light2").style.display = "none";
+  				document.getElementById("dark").style.display = "block";
+  				document.getElementById("dark2").style.display = "block";
+    			document.getElementById('my-stylesheet').href='styles/light-style.css';
+  			}else{
+  				document.getElementById("dark").style.display = "none";
+    		document.getElementById("dark2").style.display = "none";
+  				document.getElementById("light").style.display = "block";
+  				document.getElementById("light2").style.display = "block";
+    			document.getElementById('my-stylesheet').href='styles/dark-style.css';
+  			}
+			
 		}
 	</script>
    

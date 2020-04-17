@@ -1,7 +1,7 @@
 html, body{
 	font-family: 'Raleway', sans-serif;
-	background-color: white;
-	color: #5B5B5B;
+	background-color: #121212;
+	color: #FFFFFF;
 	scroll-behavior: smooth; 
 }
 
@@ -204,7 +204,11 @@ html, body{
 @media (max-width: 840px) {
 	
 	.navbar-light .navbar-brand {
-    	font-size: 40px;
+    	font-size: 32px;
+	}
+
+	.hi{
+		font-size: 25px;
 	}
 	
 }
@@ -243,12 +247,6 @@ html, body{
 		display: block;
 	}
 	
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  html, body{
-	background-color: #121212;
-	color: #FFFFFF;
 }
 
 .navbar-light .navbar-brand:hover {
@@ -318,7 +316,5 @@ html, body{
 .un-selected{
 	background-color: #121212;
 	color: #FFFFFF;
-}
-
 }
 

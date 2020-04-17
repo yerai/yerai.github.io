@@ -13,7 +13,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles/project-style.css">
+    <link rel="stylesheet" id="my-stylesheet" href="../styles/light-project.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
 
     <!-- Animations -->
@@ -208,7 +208,7 @@
   </style>
 
 
-  <body>
+  <body onload="applyMode()">
 
 
   	<div class="row">
@@ -498,7 +498,17 @@
           </div>
     </div>
 
-    
+    <!-- Mode -->
+  <script type="text/javascript">
+    function applyMode(){
+      var mode = localStorage.Mode.toString();
+      if (mode == "light"){
+        document.getElementById('my-stylesheet').href='../styles/light-project.css';
+      }else{
+        document.getElementById('my-stylesheet').href='../styles/dark-project.css';
+      }
+    }
+  </script>  
   	
 	<!-- AOS Animations -->
   	<script src="../plugins/aos/aos.js"></script>
