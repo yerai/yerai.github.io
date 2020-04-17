@@ -71,7 +71,7 @@
 	        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
 	      			</li>
 	      			<li class="nav-item" id="light" style="display: none;">
-	        			<a class="nav-link"  onclick="light();" style="margin-right: 0px;"><img src="images/sun.png" style="width: 15px; height: 15px;"></a>
+	        			<a class="nav-link" onclick="light();" style="margin-right: 0px;"><img src="images/sun.png" style="width: 15px; height: 15px;"></a>
 	      			</li>
 	      			<li class="nav-item" id="dark" style="display: none;">
 	        			<a class="nav-link"  onclick="dark();" style="margin-right: 0px;"><img src="images/moon.png" style="width: 15px; height: 15px;"></a>
@@ -201,7 +201,7 @@
 	            </div>
 
 	            <!-- AffectiveWear --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='affective-wear'>
+	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='affective-wear' style="display: none">
 	              <a href="./projects/affective-wear.html"><img src="images/affective-wear.jpg" class="img-fluid item-img w-100" alt="Affectivewear Image"></a>
 	              <div class="item-title">Affective Wear</div>
 	              <p>Cross-platform application service that classifies, stores and displays facial expressions recorded by a wearable device developed by the Interactive Media Lab.</p>
@@ -296,8 +296,8 @@
       document.getElementById("archess").style.display = "block";
       document.getElementById("safe-land").style.display = "block";
       //document.getElementById("mobile-ticket").style.display = "block";
-      document.getElementById("affective-wear").style.display = "block";
-      //document.getElementById("voluntary-work").style.display = "block";
+      //document.getElementById("affective-wear").style.display = "block";
+      document.getElementById("voluntary-work").style.display = "block";
       document.getElementById("apple-music").style.display = "block";
 
       document.getElementById("all").classList.remove('un-selected');
@@ -464,20 +464,28 @@
 
 		function checkMode(){
 
-			var mode = localStorage.Mode.toString();
-  			if (mode == "light"){
-  				document.getElementById("light").style.display = "none";
-    			document.getElementById("light2").style.display = "none";
-  				document.getElementById("dark").style.display = "block";
-  				document.getElementById("dark2").style.display = "block";
-    			document.getElementById('my-stylesheet').href='styles/light-style.css';
-  			}else{
-  				document.getElementById("dark").style.display = "none";
-    		document.getElementById("dark2").style.display = "none";
-  				document.getElementById("light").style.display = "block";
-  				document.getElementById("light2").style.display = "block";
-    			document.getElementById('my-stylesheet').href='styles/dark-style.css';
-  			}
+
+			var mode = localStorage.Mode;
+			if(mode == null){
+				localStorage.Mode = "light";
+				document.getElementById("dark").style.display = "block";
+	  			document.getElementById("dark2").style.display = "block";
+			}else{
+				if (mode == "light"){
+	  				document.getElementById("light").style.display = "none";
+	    			document.getElementById("light2").style.display = "none";
+	  				document.getElementById("dark").style.display = "block";
+	  				document.getElementById("dark2").style.display = "block";
+	    			document.getElementById('my-stylesheet').href='styles/light-style.css';
+	  			}else{
+	  				document.getElementById("dark").style.display = "none";
+	    			document.getElementById("dark2").style.display = "none";
+	  				document.getElementById("light").style.display = "block";
+	  				document.getElementById("light2").style.display = "block";
+	    			document.getElementById('my-stylesheet').href='styles/dark-style.css';
+	  			}
+			}
+  			
 			
 		}
 	</script>
