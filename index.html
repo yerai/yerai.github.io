@@ -1,503 +1,75 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- SEO --> 
+  <title>Yerai | Portfolio</title>
+  <meta name="description" content="Human Computer Interaction and Design student most interested in User Experience and Interaction.">
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+	<!-- Boostrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+	<div class="d-flex flex-row h-100">
+  		<img class="align-self-end column_1" src="./images/me.png" >
+  		<div class="d-flex flex-column align-self-center flex-fill column_2">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO -->
-    <meta name="title" content="Yerai | Portfolio">
-	<meta name="description" content="Human Computer Interaction and Design student most interested in User Experience and Interaction.">
-	<meta name="keywords" content="Human, Computer, Interaction, Design, User Experience, User Interaction">
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="English">
+  			<div class="name">YERAI</div>
+  	
+  			<div class="d-flex flex-row categories">
+  				<div id="category1" class="category" onclick="showFeatured()">FEATURED</div>
+  				<div id="category2" class="category" onclick="showUX()">UX/UI</div>
+  				<div id="category3" class="category" onclick="showInteraction()">INTERACTION</div>
+  				<div id="category4" class="category" onclick="showD()">3D</div>
+  			</div>
 
+        <div id="project-list" class="d-flex flex-row project-list">
+          <div class="project first"></div>
+      
+            <a id="apple-music" href="./projects/apple-music/apple-music.html" class="project">
+              <img class="project-image" src="./images/apple-music.jpg">
+            </a>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <a id="climbing-lights" href="./projects/climbing-lights/climbing-lights.html" class="project">
+              <img class="project-image" src="./images/climbing-lights.jpg">
+            </a>
 
-    <!-- Bosstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <a id="safe-land" href="./projects/safe-land/safe-land.html" class="project">
+              <img class="project-image" src="./images/safe-land.jpg">
+            </a>
 
-    <!-- Styles -->
-    <link rel="stylesheet" id ="my-stylesheet" href="styles/light-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins:600,700" rel="stylesheet">
+            <a id="low-poly" href="./projects/low-poly/low-poly.html" class="project">
+              <img class="project-image" src="./images/low-poly.jpg">
+            </a>
+        </div>
 
-    <!-- Animations -->
-    <link rel="stylesheet" href="plugins/aos/aos.css">
-
-    <!-- Title --> 
-    <title>Yerai</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
-
-    <!--  Google Analytics -->
-  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667467-1"></script>
-  	<script>
-  	  window.dataLayer = window.dataLayer || [];
-  	  function gtag(){dataLayer.push(arguments);}
-  	  gtag('js', new Date());
-  	  gtag('config', 'UA-138667467-1');
-  	</script>
-
-  </head>
-
-  <body onload="checkMode();">
-
-  	<nav class="navbar navbar-expand-sm navbar-light justify-content-between" data-aos="zoom-in">
-  		<a class="navbar-brand offset-sm-1" href="#">Yerai Zamorano</a>
-
-
-  		<div class="col-auto nav-items hide-on-mobile">
-	  		<ul class="navbar-nav ml-auto">
-	      			<li class="nav-item">
-	        			<a class="nav-link"  href="mailto:yeerizg@gmail.com">Email</a>
-	      			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link"  href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
-	      			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link"  href="https://www.behance.net/yerai" title="Visit Yerai's Behance" target="_blank">Behance</a>
-	      			</li>
-	      			<!--<li class="nav-item">
-	        			<a class="nav-link"  href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>
-	      			</li>-->
-	      			<li class="nav-item">
-	        			<a class="nav-link"  href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
-	      			</li>
-	      			<li class="nav-item" id="light" style="display: none;">
-	        			<a class="nav-link" onclick="light();" style="margin-right: 0px;"><img src="images/sun.png" style="width: 15px; height: 15px;"></a>
-	      			</li>
-	      			<li class="nav-item" id="dark" style="display: none;">
-	        			<a class="nav-link"  onclick="dark();" style="margin-right: 0px;"><img src="images/moon.png" style="width: 15px; height: 15px;"></a>
-	      			</li>
-	    	</ul>
-	    </div>
-
-	    <div class="col-auto nav-items show-on-mobile" id="hamburger">
-	    	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-	    </div>
-	</nav>
-
-	<div id="myNav" class="overlay">
-  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <div class="overlay-content">
-			    <a href="mailto:yeerizg@gmail.com">Email</a>
-			    <a href="http://www.linkedin.com/in/yeraizamorano" title="Visit Yerai's Linkedin" target="_blank">Linkedin</a>
-			    <a href="https://www.behance.net/yerai" title="Visit Yerai's Behance" target="_blank">Behance</a>
-			    <!--<a href="https://github.com/yerai" title="Visit Yerai's Github" target="_blank">Github</a>-->
-			    <a href="./Resume.pdf" title="Download Resume" target="_blank">Resume</a>
-			    <a class="nav-link" id="light2" style="display: none" onclick="light();">Day Mode</a>
-			    <a class="nav-link" id="dark2" style="display: none" onclick="dark();">Night Mode</a>
-			  </div>
+  		</div>
 	</div>
 
-	<div class="row" data-aos="zoom-in">
-		<div class="col-12 offset-sm-1 col-sm-10">
-			<div class="row">
-				<div class="col-12 col-sm-8">
-					<div class="hi">Hi there! <img style="width:28px; height:28px;" src="images/hi.png"></img></div>
-					<p>I am a student completing a double degree EIT Digital Master program in Human-Computer Interaction and Design. At the moment, I am most interested in User Experience and Interaction, and I would love to be able to work on these areas in the future.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-       			
-  	<div class="row section-project" id="projects">
-		<div class="col-12 offset-sm-1 col-sm-10">
-			<div class="row">
-				<!-- TITLE -->
-				<div class="section-name col-12" data-aos="zoom-in" style="margin-bottom: 10px;">Projects</div>
+  <div class="social-media">
+      <div class="d-flex flex-row centered">
+        <a href="mailto:yeerizg@gmail.com"><div class="category logo">EMAIL</div></a>
+        <a href="http://www.linkedin.com/in/yeraizamorano" target="_blank"><div class="category logo">LINKEDIN</div></a>
+        <a href="https://www.behance.net/yerai" target="_blank"><div class="category logo">BEHANCE</div></a>
+        <a href="https://github.com/yerai" target="_blank"><div class="category logo">GITHUB</div></a>
+        <a href="./Resume.pdf" target="_blank"><div class="category logo">RESUME</div></a>
+      </div>
+  </div>
 
-		        <!-- Categories --> 
-		        <div class="col-12" data-aos="zoom-in" id="cat"> 
-		            <div class="button-2 featured-btn" onclick="showFeatured()" id="all">Featured</div>
-		            <div class="button-2" onclick="showPhysical()" id="pi">Interaction</div>
-		            <div class="button-2" onclick="showUxUi()" id="uxui">UX/UI</div>
-		            <div class="button-2" onclick="showAnimation()" id="animation">3D Modeling</div>
-		            <!--<div class="button-2" onclick="showProgramming()" id="programming">Programming</div>-->
-		         </div>
-
-		        <!-- Apple Music --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='apple-music'>
-	              <a href="https://www.behance.net/gallery/95505251/Apple-Music-Redesign"><img src="images/apple-music.jpg" class="img-fluid item-img w-100"></a>
-	              <div class="item-title">Apple Music Redesign</div>
-	              <p>Redesign of the Apple Music App aiming to reduce clutter and simplify the interface. Made with Sketch.</p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="https://www.behance.net/gallery/95505251/Apple-Music-Redesign" title="Read More">Read More</a>
-	              </div>
-	            </div>
-
-	          	<!-- Safe Land --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='safe-land'>
-	              <a href="./projects/safe-land.html"><img src="images/safe-land.jpg" class="img-fluid item-img w-100"></a>
-	              <div class="item-title">Safe Land</div>
-	              <p>One day project designing an iPad platform to teach kids about the dangers of the internet. Made using Figma during Junction 2019.</p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="./projects/safe-land.html" title="Read More">Read More</a>
-	              	<a class="button col-auto" href="https://www.figma.com/proto/Fl54CSOKxPP1fXBe681FFE/Satetify?node-id=7%3A2&viewport=-485%2C-762%2C0.3011147975921631&scaling=scale-down" title="Demo" target="_blank">Demo</a>
-	              </div>
-	            </div>
-      
-				<!-- nets --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='nets'>
-	              <a href="./projects/nets.html"><img src="images/climbing-nets.jpg" class="img-fluid item-img w-100" alt="climbing nets prototype"></a>
-	              <div class="item-title">Climbing with lights</div>
-	              <p>Design and construction of an interactive climbing net prototype meant for dark and cold playgrounds using lights and music. Made using NeoPixels and Arduino Uno.</p>
-	              <div class="mt-auto">	
-	              	<a class="button col-auto" href="./projects/nets.html" title="Read More">Read More</a>
-	              	<a class="button col-auto" href="https://vimeo.com/368869269" title="Watch Video" target="_blank">Watch Video</a>
-	              </div>
-	            </div>
-
-	            <!-- flowlight --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='flowlight'>
-	              <a href="./projects/flow-light.html"><img src="images/flowLight.png" class="img-fluid item-img w-100" alt="flolight lamp image in color blue"></a>
-	              <div class="item-title">Flowlight</div>
-	              <p>Four days small project to explore physical interaction and technology related to interactive lightning. Made using NeoPixels, Arduino Uno and ultrasonic sensors.</p>
-		          <div class="mt-auto">
-		              <a class="button col-auto" href="./projects/flow-light.html" title="Read More">Read More</a>
-		              <a class="button col-auto" href="https://vimeo.com/364253366" title="Watch Video" target="_blank">Watch Video</a>
-		          </div>
-	            </div>
-
-	           	<!-- AR-Chess --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='archess'>
-	              <a href="./projects/ar-chess.html"><img src="images/arc-img-1.jpg" class="img-fluid item-img w-100"></a>
-	              <div class="item-title">AR Chess</div>
-	              <p>Design and development of an interactive AR mobile game using two different modalities to improve chess' learning experience. Made using Unity.</p>
-		          <div class="mt-auto">
-		              <a class="button col-auto" href="./projects/ar-chess.html" title="Read More">Read More</a>
-		              <a class="button col-auto" href="https://vimeo.com/386109419" title="Watch Video" target="_blank">Watch Video</a>
-		          </div>
-	            </div>
-
-	            <!-- Mobile Ticket App --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='mobile-ticket' style="display: none">
-	              <a href="./projects/mobile-ticket.html"><img src="images/mobile-ticket.jpg" class="img-fluid item-img w-100" alt="Mobile Ticket app screenshots"></a>
-	              <div class="item-title">Mobile Ticket App</div>
-	              <p>Ideation and design of a mobile application to improve the public transit experience in Madrid. Made using Justinmind and insights gathered from user research.</p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="./projects/mobile-ticket.html" title="Read More">Read More</a>
-	              </div>
-	            </div>
-
-	            <!-- voluntary work --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='voluntary-work'>
-	              <!-- Fill link of image!  --> 
-	              <a href="./projects/voluntary-work.html"> <img src="images/voluntary-work.jpg" class="img-fluid item-img w-100" alt="climbing nets prototype"></a>
-	              <div class="item-title">Voluntary Work</div>
-	              <p>Design and development of an Android mobile application following a user center design approach to connect people willing to offer and receive help.</p>
-		           <div class="mt-auto">  
-		              <a class="button col-auto" href="./projects/voluntary-work.html" title="Read More">Read More</a>
-		              <a class="button col-auto" href="https://github.com/yerai/voluntary-work" title="View on Github" target="_blank">Github</a>
-		          </div>
-	            </div>
-
-	            <!-- AffectiveWear --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='affective-wear' style="display: none">
-	              <a href="./projects/affective-wear.html"><img src="images/affective-wear.jpg" class="img-fluid item-img w-100" alt="Affectivewear Image"></a>
-	              <div class="item-title">Affective Wear</div>
-	              <p>Cross-platform application service that classifies, stores and displays facial expressions recorded by a wearable device developed by the Interactive Media Lab.</p>
-	              <div class="mt-auto">
-		              <a class="button col-auto" href="./projects/affective-wear.html" title="Read More">Read More</a>
-		              <a class="button col-auto" href="https://www.youtube.com/watch?v=9PMzpsDg518" title="Watch Video" target="_blank">Watch Video</a>
-		          </div>
-	            </div>
-
-	            <!-- The Monster Project --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='monster-project' style="display: none">
-	              <a href="./projects/monster-project.html"><img src="images/monster-project.jpg" class="img-fluid item-img w-100" alt="Character Design"></a>
-	              <div class="item-title">The Monster Project</div>
-	              <p>Production and design of a CG character inspired by a child's drawing from the Hanham Abbot School Gallery. Created using Autodesk Maya.</p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="./projects/monster-project.html" title="Read More">Read More</a>
-	              </div>
-	            </div>
-
-	            <!-- Low-Poly Treasure Island --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='poly-island' style="display: none">
-	              <a href="./projects/poly-island.html"><img src="images/poly-island.png" class="img-fluid item-img w-100" alt=""></a>
-	              <div class="item-title">Low-Poly Treasure Island</div>
-	              <p>Modeling, shading, and rendering of a small low-poly 3D scene of an island using Blender. </p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="./projects/poly-island.html" title="Read More">Read More</a>
-	              	<a class="button col-auto" href="https://p3d.in/9bVsC" title="Explore 3D Model" target="_blank">Explore 3D Model</a>
-	              </div>
-	            </div>
-
-	           	<!-- Beat of my Drum --> 
-	            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column" data-aos="zoom-in" id='robot' style="display: none">
-	              <a href="./projects/robot.html"><img src="images/robot.jpg" class="img-fluid item-img w-100" alt="Robot Image"></a>
-	              <div class="item-title">Beat of my Drum</div>
-	              <p>Animated short choreographing a set of simple base shapes to elegantly come together as a robotic character that dances. Created using Autodesk Maya.</p>
-	              <div class="mt-auto">
-	              	<a class="button col-auto" href="./projects/robot.html" title="Read More">Read More</a>
-	              	<a class="button col-auto" href="https://vimeo.com/364497650" title="Watch Video" target="_blank">Watch Video</a>
-	              </div>
-	            </div>
-
-	            <!-- Videocorn 
-	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='video-corn' style="display: none">
-	              <a href="./projects/video-corn.html"><img src="images/video-corn.jpg" class="img-fluid item-img w-100" alt="video corn"></a>
-	              <div class="item-title">VideoCorn</div>
-	              <p>Online video shop web application made using Django & Boostrap. All the information provided by the application is obtained using The Movie Database API.</p>
-	              <a class="button col-auto" href="./projects/video-corn.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://github.com/yerai/DAW-VideoCorn" title="View on Github" target="_blank">View on Github</a>
-	            </div> -->
-
-	            <!-- Movie Interactive Visual Analysis Tool 
-	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='analysis-tool' style="display: none">
-	              <a href="./projects/analysis-tool.html"><img src="images/rstudio.jpg" class="img-fluid item-img w-100" alt="Movie Interactive Visual Analysis Tool"></a>
-	              <div class="item-title">Movie Interactive Visual Analysis Tool</div>
-	              <p>Design and implementation of a Interactive Visual Analysis Tool focused on the movie industry using RStudio and Shiny.</p>
-	              <a class="button col-auto" href="./projects/analysis-tool.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="https://yerai.shinyapps.io/Movie-Interactive-Visual-Analysis-Tool/" title="Demo" target="_blank">Demo</a>
-	            </div>  -->
-
-	            <!-- EIT Digital Newspaper 
-	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='newspaper' style="display: none">
-	              <a href="./projects/newspaper.html"><img src="images/newspaper.png" class="img-fluid item-img w-100" alt="EIT Digital Newspaper Image"></a>
-	              <div class="item-title">EIT Digital Newspaper</div>
-	              <p>Newspaper web application with the typical functionalitites needed to publish and manage a newspaper web. Made using Boostrap & AngularJS.</p>
-	              <a class="button col-auto" href="./projects/newspaper.html" title="Read More">Read More</a>
-	              <a class="button col-auto" href="http://yerai.me/PUI-Newspaper/" title="Demo" target="_blank">Demo</a>
-	            </div> -->
-
-
-	            <!-- 100Cards  
-	            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" id='cards' style="display: none">
-	              <a href="https://www.100cards.io/"><img src="images/100cards.png" class="img-fluid item-img w-100" alt="100 Cards Lading Page"></a>
-	              <div class="item-title">100Cards Landing Page</div>
-	              <p>Design and development of a responsive Landing Page for a fin-tech mobile application - including assets. Made using Wordpress and CSS.</p>
-	              <a class="button col-auto" href="https://www.100cards.io/" title="Demo" target="_blank">Demo</a>
-	            </div> -->
-
-			</div>		
-		</div>		
-	</div>
-
-  <!-- Categories -->
-  <script>
-    var projects = ["apple-music","safe-land","nets","flowlight","archess","mobile-ticket","affective-wear","monster-project","voluntary-work","robot", "poly-island"];
-    var categories = ["all","pi","uxui","animation"];
-
-    function showFeatured() {
-      hideAll();
-      resetCategories();
-      document.getElementById("nets").style.display = "block";
-      document.getElementById("flowlight").style.display = "block";
-      document.getElementById("archess").style.display = "block";
-      document.getElementById("safe-land").style.display = "block";
-      //document.getElementById("mobile-ticket").style.display = "block";
-      //document.getElementById("affective-wear").style.display = "block";
-      document.getElementById("voluntary-work").style.display = "block";
-      document.getElementById("apple-music").style.display = "block";
-
-      document.getElementById("all").classList.remove('un-selected');
-      document.getElementById("all").classList.add('selected');
-
-      /*
-      if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-      	document.getElementById("all").style.backgroundColor = "#FFFFFF";
-      	document.getElementById("all").style.color = "#121212";
-	  }else{
-	  	document.getElementById("all").style.backgroundColor = "#3E3E3E";
-      	document.getElementById("all").style.color = "white";
-	  }*/
-      
-      AOS.refresh();
-    }
-
-    function showPhysical() {
-      hideAll();
-      resetCategories();
-      document.getElementById("nets").style.display = "block";
-      document.getElementById("flowlight").style.display = "block";
-      document.getElementById("archess").style.display = "block";
-
-      document.getElementById("pi").classList.remove('un-selected');
-      document.getElementById("pi").classList.add('selected');
-	  
-      
-      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-      	document.getElementById("pi").style.backgroundColor = "#FFFFFF";
-      	document.getElementById("pi").style.color = "#121212";
-	  }else{
-	  	document.getElementById("pi").style.backgroundColor = "#3E3E3E";
-      	document.getElementById("pi").style.color = "white";
-	  }*/
-      AOS.refresh();
-    }
-
-    function showUxUi() {
-      hideAll();
-      resetCategories();
-      document.getElementById("apple-music").style.display = "block";
-      document.getElementById("safe-land").style.display = "block";
-      document.getElementById("mobile-ticket").style.display = "block";
-      document.getElementById("affective-wear").style.display = "block";
-      document.getElementById("voluntary-work").style.display = "block";
-
-      document.getElementById("uxui").classList.remove('un-selected');
-      document.getElementById("uxui").classList.add('selected');
-      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-      	document.getElementById("uxui").style.backgroundColor = "#FFFFFF";
-      	document.getElementById("uxui").style.color = "#121212";
-	  }else{
-	  	document.getElementById("uxui").style.backgroundColor = "#3E3E3E";
-      	document.getElementById("uxui").style.color = "white";
-	  }*/
-      AOS.refresh();
-    }
-    function showAnimation() {
-      hideAll();
-      resetCategories();
-      document.getElementById("monster-project").style.display = "block";
-      document.getElementById("robot").style.display = "block";
-      document.getElementById("poly-island").style.display = "block";
-      document.getElementById("animation").classList.remove('un-selected');
-      document.getElementById("animation").classList.add('selected');
-      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-      	document.getElementById("animation").style.backgroundColor = "#FFFFFF";
-      	document.getElementById("animation").style.color = "#121212";
-	  }else{
-	  	document.getElementById("animation").style.backgroundColor = "#3E3E3E";
-      	document.getElementById("animation").style.color = "white";
-	  }*/
-      AOS.refresh();
-    }
-    
-    /*function showProgramming() {
-      hideAll();
-      resetCategories();
-      document.getElementById("affective-wear").style.display = "block";
-      document.getElementById("video-corn").style.display = "block";
-      document.getElementById("analysis-tool").style.display = "block";
-      document.getElementById("newspaper").style.display = "block";
-      document.getElementById("cards").style.display = "block";
-      document.getElementById("programming").style.backgroundColor = "#3E3E3E";
-      document.getElementById("programming").style.color = "white";
-      AOS.refresh();
-    }*/
-
-    function showAll(){
-      for(i=0; i<projects.length; i++){
-        var x = document.getElementById(projects[i]);
-        console.log("show: " + projects[i]);
-        x.style.display = "block";
-      }
-      resetCategories();
-      document.getElementById("all").classList.remove('un-selected');
-      document.getElementById("all").classList.add('selected');
-
-      /*if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-      	document.getElementById("all").style.backgroundColor = "#FFFFFF";
-      	document.getElementById("all").style.color = "#121212";
-	  }else{
-	  	document.getElementById("all").style.backgroundColor = "#3E3E3E";
-      	document.getElementById("all").style.color = "white";
-	  }*/
-      AOS.refresh();
-    }
-
-    function hideAll(){
-      for(i=0; i<projects.length; i++){
-        var x = document.getElementById(projects[i]);
-        console.log("hide: " + projects[i]);
-        x.style.display = "none";
-      }
-    }
-
-    function resetCategories(){
-      for(i=0; i<categories.length; i++){
-        var x = document.getElementById(categories[i]);
-        if ((window.matchMedia("(prefers-color-scheme: dark)")).matches) {
-        	x.classList.remove('selected');
-      		x.classList.add('un-selected');
-		}else{
-		  	x.classList.remove('selected');
-      		x.classList.add('un-selected');
-		}
-       
-      }
-    }
-  </script>
-
-  <!-- Mobile Navbar -->
-    <script>
-		function openNav() {
-		  document.getElementById("myNav").style.height = "100%";
-		  document.getElementById("hamburger").style.display = "none";
-		}
-
-		function closeNav() {
-		  document.getElementById("myNav").style.height = "0%";
-		  document.getElementById("hamburger").style.display = "block";
-		}
-	</script>
-
-	<!-- Dark/Light button -->
-	<script type="text/javascript">
-		function light() {
-    		document.getElementById('my-stylesheet').href='styles/light-style.css';
-    		document.getElementById("light").style.display = "none";
-    		document.getElementById("light2").style.display = "none";
-    		document.getElementById("dark").style.display = "block";
-    		document.getElementById("dark2").style.display = "block";
-    		localStorage.Mode = "light";
-		}
-		function dark() {
-    		document.getElementById('my-stylesheet').href='styles/dark-style.css';
-    		document.getElementById("dark").style.display = "none";
-    		document.getElementById("dark2").style.display = "none";
-    		document.getElementById("light").style.display = "block";
-    		document.getElementById("light2").style.display = "block";
-    		localStorage.Mode = "dark";
-		}
-
-		function checkMode(){
-
-
-			var mode = localStorage.Mode;
-			if(mode == null){
-				localStorage.Mode = "light";
-				document.getElementById("dark").style.display = "block";
-	  			document.getElementById("dark2").style.display = "block";
-			}else{
-				if (mode == "light"){
-	  				document.getElementById("light").style.display = "none";
-	    			document.getElementById("light2").style.display = "none";
-	  				document.getElementById("dark").style.display = "block";
-	  				document.getElementById("dark2").style.display = "block";
-	    			document.getElementById('my-stylesheet').href='styles/light-style.css';
-	  			}else{
-	  				document.getElementById("dark").style.display = "none";
-	    			document.getElementById("dark2").style.display = "none";
-	  				document.getElementById("light").style.display = "block";
-	  				document.getElementById("light2").style.display = "block";
-	    			document.getElementById('my-stylesheet').href='styles/dark-style.css';
-	  			}
-			}
-  			
-			
-		}
-	</script>
-   
-	<!-- AOS Animations -->
-  	<script src="plugins/aos/aos.js"></script>
-  	<script type="text/javascript">
-  		AOS.init({
-  			duration: 1200,
-  		});
-  	</script>
-
-  </body>
-
+	<!-- JQuery -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Boostrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Horizontal -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+	<!-- Script -->
+	<script  src="./js/script.js"></script>
+</body>
 </html>

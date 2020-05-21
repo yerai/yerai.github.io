@@ -1,0 +1,35 @@
+body{
+	margin:0; position: relative;
+	color: white; 
+	font-weight: 200; 
+	font-size: 1.5vw; 
+	font-family: 'Oswald';
+}
+
+img{
+	width: 100%; display: block;
+}
+
+a{
+	text-decoration: none;
+	color: white; 
+}
+
+.button{
+	position: absolute; 
+	bottom: 5vw; 
+	left:5vw; 
+}
+
+.button_2{
+	margin-left: 5.2vw;
+	margin-bottom: 2vw;
+}
+
+.video{
+	margin: 5.2vw;
+}
+
+@media screen and (max-width: 600px) {
+	.button, .button_2{ font-size: 5vw; }
+}
