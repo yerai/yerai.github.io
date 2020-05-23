@@ -14,9 +14,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #003E79;">
-  <img src="./poly-island-1.jpg">
-  <img src="./poly-island-2.jpg">
-  <img src="./poly-island-3.jpg">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./mobile/poly-island-1.jpg">
+    <img src="./desktop/poly-island-1.jpg">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./mobile/poly-island-2.jpg">
+    <img src="./desktop/poly-island-2.jpg">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./mobile/poly-island-3.jpg">
+    <img src="./desktop/poly-island-3.jpg">
+  </picture>
   <a href="../../index.html"><div class="button">&lt; Go Back</div></a>
 </body>
 </html>
