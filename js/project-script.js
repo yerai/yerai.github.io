@@ -13,4 +13,6 @@ $(window).on("load", function() {
     for(var i=0; i<elems.length; i++){
     	elems[i].style.display="block";
     }
+
+    document.getElementById("loading").style.display="none";
 });
