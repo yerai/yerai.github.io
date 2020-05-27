@@ -16,30 +16,36 @@ html,body{
 }
 
 .column_2{
-	width: 50vw;
+	width: 55vw;
+	margin-bottom: 5vh;
 }
 	.name{
 		font-family: 'Oswald', sans-serif;
-		font-size: 12vh;
+		font-size: 10vh;
+		line-height: 10vh;
 		font-weight: 500;
 		transform: scale(1, 1.3);
 	}
 
 	.categories{
-		margin-bottom: 1vh;
+		margin-bottom: 0.5vh;
+		margin-top:3vh;
 	}
 		.category{
-			padding: 1vw;
 			font-size: 1.2vw;
 			font-family: 'Oswald', sans-serif;
 			font-weight: 200;
+			color:grey;
+			margin-right: 1vh;
 		}
 
 		.category:hover{
-			text-decoration: line-through;
+			color:black;
+			font-weight: 500;
 		}
 
 		.selected{
+			color:black;
 			font-weight: 500;
 		}
 
@@ -48,7 +54,7 @@ html,body{
 	    overflow-y: hidden;
 	    -webkit-overflow-scrolling: touch;
 	    margin-left: -50vw;
-	    height: 50vh;
+	    height: 56vh;
 	}
 		.project{
 			float: none;
@@ -58,7 +64,7 @@ html,body{
 
 		.project-image{
 			height: 100%;
-			margin-right: 5vw;
+			margin-right: 2vh;
 		}
 
 		.first{
@@ -69,12 +75,11 @@ html,body{
 
 .social-media{
 	position: absolute; 
-	bottom: 3%; 
-	right: 2%;
+	bottom: 1vh; 
+	right: 1vh;
 }
 
 	.logo{
-		padding: 0.3vw;
 		color: #78807E;
 		font-size: 1.1vw;
 	}
@@ -87,7 +92,7 @@ html,body{
 	.column_1{ width: 0; }
 	.column_2{ margin-left: 5vw; }
 		.category{font-size: 5vw; }
-		.project-list{ margin-left: -5vw; }
+		.project-list{ margin-left: -5vw; height: auto; }
 		.project{ height: 27vh; }
 		.first{ margin-right: 5vw; }
 	.logo{ font-size: 4vw; padding: 2vw; }
