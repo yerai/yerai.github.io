@@ -118,6 +118,7 @@ a{
 @media screen and (max-width: 600px) {
 	.button { font-size: 5vw; }
   .lds-roller{ left:40vw; }
+  .video{ margin: 6vh;}
 }
 
 
