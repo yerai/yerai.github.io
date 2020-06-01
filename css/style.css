@@ -6,6 +6,7 @@ html,body{
 	margin:0;
 	overflow: hidden;
 	background-color: #F3F7FE;
+	color: #233030;
 }
 
 ::-webkit-scrollbar {
@@ -79,6 +80,12 @@ html,body{
 	.on-mobile{
 		display: none !important;
 	}
+
+	#email{
+		font-weight: 500;
+		color: #233030;
+	}
+
 
 @media screen and (max-width: 600px) {
 	.name{ margin-left: 4vw; }
