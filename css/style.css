@@ -275,7 +275,7 @@ a{
 	}
 
 .footer-am{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	right: 10vw;
 	margin-bottom: 5vh;
@@ -283,15 +283,15 @@ a{
 
 
 @media screen and (max-width: 600px) {
-	.project{width: 80vw; height: 50vw; margin-bottom: 1vw;}
+	.project{width: 90vw; height: 60vw; margin-bottom: 1vw;}
 	.right{margin-right: 0;}
-	body{margin-top: 5vh;}
+	body{margin-top: 5vh; margin-left: 5vw; margin-right: 5vw;}
 	.footer{margin-bottom: 5vh;}
 	.logo{font-size: 1.5em; line-height: 1em;}
 	.myself{width: 100%;}
 	.description{flex-direction:column;}
 	.introduction{width: 100%; padding:0;}
-	.links{flex-direction: column;}
+	.links{flex-direction: column; margin-bottom: 5vw;}
 	.links-group{margin-left: 0;}
 	.columns{flex-direction: column-reverse;}
 	.column_1{width: 100%; padding:0;}
