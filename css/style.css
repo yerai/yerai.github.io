@@ -6,7 +6,7 @@ body{
 	margin-left: 10vw;
 	margin-right: 10vw;
 	font-family: 'Oswald', sans-serif;
-	color: #6b6b6b;
+	color: #B2B2B2;
 }
 
 a{
@@ -23,16 +23,16 @@ a{
 		font-size: 2.5em;
 		font-weight: 500;
 		align-self: center;
-		color: #000000;
+		color: #494949;
 	}
 
 	.surname{
 		font-weight: 200; 
-		color: #6b6b6b;
+		color: #B2B2B2;
 	}
 
 	.logo:hover .surname{
-		color: #5B63B7;
+		color: #494949;
 	}
 
 	.options{
@@ -46,92 +46,74 @@ a{
 
 	.item{
 		margin-left: 1em;
-		color: #6b6b6b;
+		color: #B2B2B2;
 	}
 
 	.item:hover{
-		color: #5B63B7;
+		color: #494949;
 	}
 
 	.selected{
-		color: #5B63B7;
+		color: #494949;
 	}
 
 .projects{
 	display: flex;
-  	flex-direction: row;
-  	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 	.project{
-		position: relative;
-		width: 39.8vw;
-		height: 27.615vw;
-		margin-bottom: 0.4vw;
-		background-size: cover;
 		overflow: hidden;
+		position: relative;
+		background-color: #F5F5F5; 
+		display: flex; 
+		flex-direction: row;
+		margin-bottom: 3vh;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #494949;
+	}
+
+	.project:hover .overlay {
+	  opacity: 0.3;
 	}
 
 	.project-img{
-		height: 100%;
-     	width: 100%;
-     	background-size: cover;
-     	background-position: center;
-     	transition: all 0.7s ease;
+		width: 50%;
+		height: 50vh; 
+		background-size: cover; 
+		background-position: center; 
 	}
 
-	.project:hover .project-img{
-		transform: scale(1.2) rotate(3deg);
+	.project-text{
+		width: 50%; 
+		align-self: center; 
+		text-align: center;
+		color:#494949;
 	}
 
-	.right{
-		margin-right: 0.4vw;
-	}
-
-		.image{
-			display: block;
-  			width: 100%;
-  			height: auto;
+		.title{
+			font-size: 1.7em;
+			font-weight: 300;
 		}
-
-		.overlay {
-		  position: absolute;
-		  top: 0;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  height: 100%;
-		  width: 100%;
-		  opacity: 0;
-		  transition: .5s ease;
-		  background-color: #000000;
+		.category{
+			margin-top: 0.5em;
+			font-size: 0.9em;
+			opacity: 0.6;
+			font-weight: 500;
 		}
-
-		.project:hover .overlay {
-		  opacity: 0.8;
-		}
-
-		.text {
-		  color: white;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  -webkit-transform: translate(-50%, -50%);
-		  -ms-transform: translate(-50%, -50%);
-		  transform: translate(-50%, -50%);
-		  text-align: center;
-		}
-			.title{
-				font-size: 1.5em;
-				font-weight: 300;
-			}
-			.category{
-				margin-top: 0.5em;
-				font-size: 1em;
-				opacity: 0.9;
-				font-weight: 500;
-			}
-
+	
 .footer{
 	display: flex;
   	flex-direction: row;
@@ -152,7 +134,6 @@ a{
 	}
 
 /* Projects */
-
 .content{
 	display: flex;
   	flex-direction: column;
@@ -161,7 +142,6 @@ a{
 	.cover{
 		position: relative;
 		height: 40vh;
-		background-color: red;
 		width: 100%;
 		background-size: cover;
 	}
@@ -175,7 +155,7 @@ a{
 			height: 100%;
 			width: 100%;
 			opacity: 0.7;
-			background-color: #000000;
+			background-color: #B2B2B2;
 		}
 
 		.cover-title{
@@ -206,7 +186,7 @@ a{
 			.c-bold{
 				font-weight: 500;
 				font-size: 1em;
-				color: #000000;
+				color: #494949;
 				font-family: 'Oswald', sans-serif;
 			}
 
@@ -267,11 +247,11 @@ a{
 	}
 
 	.c-normal a{
-		color:#6b6b6b;
+		color:#B2B2B2;
 	}
 
 	.c-normal a:hover{
-		color:#5B63B7;
+		color:#494949;
 	}
 
 .footer-am{
