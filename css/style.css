@@ -6,7 +6,7 @@ body{
 	margin-left: 10vw;
 	margin-right: 10vw;
 	font-family: 'Oswald', sans-serif;
-	color: #B2B2B2;
+	color: #464646;
 }
 
 a{
@@ -16,7 +16,7 @@ a{
 .navbar{
 	display: flex;
   	flex-direction: row;
-  	margin-bottom: 5vh;
+  	margin-bottom: 10vh;
 }
 
 	.logo{
@@ -66,34 +66,25 @@ a{
 	.project{
 		overflow: hidden;
 		position: relative;
-		background-color: #F5F5F5; 
 		display: flex; 
 		flex-direction: row;
-		margin-bottom: 3vh;
 	}
 
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #494949;
+	#a:hover #b, #a:hover #c{
+		transform: scale(1.1);
 	}
 
-	.project:hover .overlay {
-	  opacity: 0.3;
-	}
-
-	.project-img{
+	.img-container{
 		width: 50%;
 		height: 50vh; 
+		overflow: hidden;
+	}
+	.project-img{
+		width: 100%;
+		height: 100%; 
 		background-size: cover; 
 		background-position: center; 
+		transition: transform 1.3s; /* Animation */
 	}
 
 	.project-text{
@@ -101,6 +92,7 @@ a{
 		align-self: center; 
 		text-align: center;
 		color:#494949;
+		transition: transform 1.3s; /* Animation */
 	}
 
 		.title{
@@ -117,7 +109,7 @@ a{
 .footer{
 	display: flex;
   	flex-direction: row;
-  	margin-top: 5vh;
+  	margin-top: 10vh;
   	margin-bottom: 15vh;
   	font-weight: 200;
 }
@@ -155,7 +147,7 @@ a{
 			height: 100%;
 			width: 100%;
 			opacity: 0.7;
-			background-color: #B2B2B2;
+			background-color: #464646;
 		}
 
 		.cover-title{
@@ -178,7 +170,7 @@ a{
 		.column_1{
 			display: flex;
   			flex-direction: column;
-  			width:30%;
+  			width:20%;
   			padding-left: 5%;
 
 		}
@@ -200,7 +192,7 @@ a{
 		.column_2{
 			display: flex;
   			flex-direction: column;
-  			width:70%;
+  			width:80%;
 		}
 
 			.c-img{
@@ -247,7 +239,7 @@ a{
 	}
 
 	.c-normal a{
-		color:#B2B2B2;
+		color:#464646;
 	}
 
 	.c-normal a:hover{
@@ -263,7 +255,7 @@ a{
 
 
 @media screen and (max-width: 600px) {
-	.project{width: 90vw; height: 60vw; margin-bottom: 1vw;}
+	.project{width: 90vw; height: 40vw; margin-bottom: 1vw;}
 	.right{margin-right: 0;}
 	body{margin-top: 5vh; margin-left: 5vw; margin-right: 5vw;}
 	.footer{margin-bottom: 5vh;}
@@ -277,4 +269,5 @@ a{
 	.column_1{width: 100%; padding:0;}
 	.column_2{width: 100%;}
 	.back-button{margin-top: -8vw;}
+	.project-img{background-size: 60vw; background-position: top;}
 }

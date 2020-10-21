@@ -22,6 +22,9 @@
 	gtag('js', new Date());
 	gtag('config', 'UA-138667467-1');
    </script>
+   <!-- Animations -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -34,71 +37,96 @@
 		</div>
 	</div>
 
-	<div class="projects">
-		<a class="project" href="./projects/apple-music/apple-music.html">
-			<div class="project-img" style="background-image: url('./images/apple-music.jpg');"></div>
-			<div class="project-text">
+	<div class="projects" id="projects">
+		<a class="project" id="a" data-aos="fade-right" href="./projects/apple-music/apple-music.html">
+			<div class="img-container"><div class="project-img" id="b" style="background-image: url('./images/apple-music.jpg');"></div></div>
+			<div class="project-text" id="c">
 				<div class="title">Apple Music Redesign</div>
 				<div class="category">UX/UI</div>
 			</div>
-			<div class="overlay"></div>
+			
 		</a>
 
-		<a class="project" href="./projects/safe-land/safe-land.html">
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-left" href="./projects/safe-land/safe-land.html">
+			<div class="project-text" id="b">
 				<div class="title">SafeLand</div>
 				<div class="category">UX/UI</div>
 			</div>
-			<div class="project-img" style="background-image: url('./images/safe-land.jpg');"></div>
-			<div class="overlay"></div>
+			<div class="img-container"><div class="project-img" id="c" style="background-image: url('./images/safe-land.jpg');"></div></div>
 		</a>
 
-		<a class="project" href="./projects/daily-ui/daily-ui.html">
-			<div class="project-img" style="background-image: url('./images/daily-ui.jpg');"></div>
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-right" href="./projects/daily-ui/daily-ui.html">
+			<div class="img-container"><div class="project-img" id="b" style="background-image: url('./images/daily-ui.jpg');"></div></div>
+			<div class="project-text" id="c">
 				<div class="title">Daily UI Challenge</div>
 				<div class="category">UX/UI</div>
 			</div>
-			<div class="overlay"></div>
 		</a>
 
-		<a class="project" href="./projects/climbing-lights/climbing-lights.html">
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-left" href="./projects/climbing-lights/climbing-lights.html">
+			<div class="project-text" id="b">
 				<div class="title">Climbing with Lights</div>
 				<div class="category">IDEATION & PROTOTYPING</div>
 			</div>
-			<div class="project-img" style="background-image: url('./images/climbing-lights.jpg');"></div>
-			<div class="overlay"></div>
+			<div class="img-container"><div class="project-img" id="c" style="background-image: url('./images/climbing-lights.jpg');"></div></div>
 		</a>
 
-		<a class="project" href="./projects/flow-light/flow-light.html">
-			<div class="project-img" style="background-image: url('./images/flow-light.jpg');"></div>
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-right" href="./projects/flow-light/flow-light.html">
+			<div class="img-container"><div class="project-img" id="b" style="background-image: url('./images/flow-light.jpg');"></div></div>
+			<div class="project-text" id="c">
 				<div class="title">FlowLight</div>
 				<div class="category">IDEATION & PROTOTYPING</div>
 			</div>
-			<div class="overlay"></div>
 		</a>
-
 		
-		<a class="project" href="./projects/low-poly/low-poly.html">
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-left" href="./projects/low-poly/low-poly.html">
+			<div class="project-text" id="b">
 				<div class="title">Treasure Island</div>
 				<div class="category">3D MODELING</div>
 			</div>
-			<div class="project-img" style="background-image: url('./images/low-poly.jpg');"></div>
-			<div class="overlay"></div>
+			<div class="img-container"><div class="project-img" id="c" style="background-image: url('./images/low-poly.jpg');"></div></div>
 		</a>
 
-		<a class="project" href="./projects/ar-chess/ar-chess.html">
-			<div class="project-img" style="background-image: url('./images/ar-chess.jpg');"></div>
-			<div class="project-text">
+		<a class="project" id="a" data-aos="fade-right" href="./projects/ar-chess/ar-chess.html">
+			<div class="img-container"><div class="project-img" id="b" style="background-image: url('./images/ar-chess.jpg');"></div></div>
+			<div class="project-text" id="c">
 				<div class="title">AR Chess</div>
 				<div class="category">INTERACTION</div>
 			</div>
-			<div class="overlay"></div>
 		</a>
 		
+	</div>
+
+	<div class="description" id="about-me" style="display: none">
+		<img class="myself" src="./images/me.jpg">
+
+	    <div class="introduction">
+	      <p>I am a student completing a double degree EIT Digital Master program in Human-Computer Interaction and Design. At the moment, I am most interested in User Experience and Interaction, and I would love to be able to work on these areas in the future.</p>
+
+	      <div class="links">
+
+	      	<div class="links-group" style="margin-left: 0;">
+	      		<div class="c-bold">CONTACT</div>
+	      		<div class="c-normal">yeerizg@gmail.com</div>
+	      	</div>
+	      	<div class="links-group">
+	      		<div class="c-bold">SOCIAL</div>
+			     <div class="c-normal">
+			      	<a href="https://www.linkedin.com/in/yeraizamorano" style="margin-right: 0.5em;">LinkedIn</a>
+			      	<a href="https://www.behance.net/yerai" style="margin-right: 0.5em;">Behance</a>
+			      	<a href="https://dribbble.com/yerai">Dribbble</a>
+			    </div>
+	      	</div>
+	      	<div class="links-group">
+	      		<div class="c-bold">OTHER</div>
+			    <div class="c-normal">
+			      	<a href="./Resume.pdf">Resume</a>
+			    </div>
+	      	</div>
+	      </div>
+	      
+	    </div>
+
 	</div>
 
 	<div class="footer">
@@ -111,5 +139,10 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 	<!-- Script -->
 	<script  src="./js/script.js"></script>
+	<!-- Animation -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script> AOS.init({duration: 2000, mirror: true}); </script>
+
+	</script>
 </body>
 </html>
