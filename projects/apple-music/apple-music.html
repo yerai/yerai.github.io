@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../../images/favicon.png"/>
+  <!-- Animations -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <!--  Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667467-1"></script>
   <script>
@@ -35,7 +37,7 @@
    <div class="columns">
      
 
-     <div class="column_2">
+     <div class="column_2" data-aos="fade-right">
        <img class="c-img" src="./img/apple-music-1.jpg">
        <img class="c-img" loading="lazy" src="./img/apple-music-2.jpg">
        <img class="c-img" loading="lazy" src="./img/apple-music-3.jpg">
@@ -44,7 +46,7 @@
        <a href="../../index.html" class="back-button">&lt; Go Back</a>
      </div>
 
-     <div class="column_1">
+     <div class="column_1" data-aos="fade-left">
       <div class="c-bold">DESCRIPTION</div>
        <div class="c-normal">Redesign of the Apple Music App aiming to reduce clutter and simplify the interface.</div>
        <div class="c-bold">CATEGORY</div>
@@ -64,6 +66,10 @@
     <div>yeerizg@gmail.com</div>
     <div class="copyright">© 2020</div>
   </div>
+
+  <!-- Animation -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script> AOS.init({duration: 2000}); </script>
 	
 </body>
 </html>

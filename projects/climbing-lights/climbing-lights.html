@@ -18,6 +18,8 @@
 	gtag('js', new Date());
 	gtag('config', 'UA-138667467-1');
    </script>
+   <!-- Animations -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
 
@@ -33,7 +35,7 @@
 	<div class="content">
 
    <div class="columns">
-     <div class="column_2">
+     <div class="column_2" data-aos="fade-right">
        <img class="c-img" src="./img/climbing-lights-1.jpg">
        <img class="c-img" loading="lazy" src="./img/climbing-lights-2.jpg">
        <img class="c-img" loading="lazy" src="./img/climbing-lights-3.jpg">
@@ -49,7 +51,7 @@
      </div>
       
 
-     <div class="column_1">
+     <div class="column_1" data-aos="fade-left">
       <div class="c-bold">DESCRIPTION</div>
        <div class="c-normal">Design and construction of an interactive climbing net prototype meant for dark and cold playgrounds using lights and music.</div>
        <div class="c-bold">CATEGORY</div>
@@ -69,6 +71,10 @@
     <div>yeerizg@gmail.com</div>
     <div class="copyright">© 2020</div>
   </div>
+
+  <!-- Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({duration: 2000}); </script>
 	
 </body>
 </html>
