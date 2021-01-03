@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO --> 
+  <title>Yerai | Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon.png"/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!--  Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667467-1"></script>
+  <script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-138667467-1');
+   </script>
+</head>
+<body>
+
+
+	<div class="about-text" id="about-text" style="z-index: -10">I'm a UX/UI designer based in Madrid. I love designing physical and digital experiences applying a user-centred design approach. I consider myself a very organized and cheerful person that loves catching up with new design trends and technologies.</div>
+
+	<section class="slideshow">
+		<img src="./images/0.jpg">
+		<img src="./images/1.png">
+		<img src="./images/2.png">
+		<img src="./images/3.png">
+		<img src="./images/4.png">
+		<img src="./images/5.png">
+	</section>
+
+	<div class="items">
+		<div class="first-column">
+  			<svg class="text-line name">
+  				<text x="0" y="0" fill="none" dominant-baseline="hanging">YERAI</text>
+			</svg>
+			<svg class="text-line-2 menu">
+  				<text class="menu-item" x="0" y="0" fill="none" dominant-baseline="hanging" onmouseover="showAbout()" onmouseleave="hideAbout()">ABOUT</text>
+			</svg>
+		</div>
+
+		<div class="projects" id="projects">
+			<svg class="text-line-2 project" onmouseover="show(1)" onmouseleave="hide()">
+  				<a href="./projects/apple-music/apple-music.html"><text x="0" y="0" dominant-baseline="hanging">Apple Music Concept</text></a>
+			</svg>
+			<svg class="text-line-2 project" onmouseover="show(2)" onmouseleave="hide()">
+  				<a href="./projects/safe-land/safe-land.html"><text x="0" y="0" dominant-baseline="hanging">SafeLand</text></a>
+			</svg>
+			<svg class="text-line-2 project" onmouseover="show(4)" onmouseleave="hide()">
+  				<a href="./projects/daily-ui/daily-ui.html"><text x="0" y="0" dominant-baseline="hanging">Daily UI</text></a>
+			</svg>
+			<svg class="text-line-2 project" onmouseover="show(3)" onmouseleave="hide()">
+  				<a href="./projects/flow-light/flow-light.html"><text x="0" y="0" dominant-baseline="hanging">FlowLight</text></a>
+			</svg>
+			<svg class="text-line-2 project" onmouseover="show(5)" onmouseleave="hide()">
+  				<a href="./projects/climbing-lights/climbing-lights.html"><text x="0" y="0" dominant-baseline="hanging">Climbing With Lights</text></a>
+			</svg>
+		</div>
+	</div>
+
+	<div class="mobile">
+		<svg class="text-line name">
+  			<text x="0" y="0" fill="none" dominant-baseline="hanging">YERAI</text>
+		</svg>
+
+		<a href="./projects/apple-music/apple-music.html"><div class="group" style="margin-top: 0;">
+			<div class="project">Apple Music Concept</div>
+			<img class="imgs" src="./images/1.png">
+		</div></a>
+
+		<a href="./projects/safe-land/safe-land.html"><div class="group">
+			<div class="project">SafeLand</div>
+			<img class="imgs" src="./images/2.png">
+		</div></a>
+
+		<a href="./projects/daily-ui/daily-ui.html"><div class="group">
+			<div class="project">Daily UI</div>
+			<img class="imgs" src="./images/4.png">
+		</div></a>
+
+		<a href="./projects/flow-light/flow-light.html"><div class="group">
+			<div class="project">FlowLight</div>
+			<img class="imgs" src="./images/3.png">
+		</div></a>
+
+	</div>
+
+<script src="./js/script.js"></script>
+</body> 
+</html>
