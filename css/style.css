@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap');
+
+body{
+	color: #303030;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-size: 5vw;
+}
+
+.items{
+	display:flex; 
+	flex-direction: row; 
+	height: 100vh;
+}
+
+.mobile{
+	display: none;
+	margin-bottom: 10vh;
+}
+
+.first-column{
+	display:flex; 
+	flex-direction: column;
+	width: 17vw;
+}
+
+.name{
+	flex-grow: 1;
+	margin-left: 2vw;
+	margin-top: 2vw;
+
+	height: 5vw;
+	width: 15vw;
+	stroke: #303030;
+	stroke-width:2;
+
+	font-weight: 900;
+
+	cursor: pointer;
+}
+
+.projects{
+	margin-top: 2vw;
+	margin-left: 3vw;
+}
+
+.menu{
+	margin-left: 2vw; 
+
+	height: 3vw;
+	width: 20vw;
+	stroke: #303030;
+	stroke-width:0.5;
+
+	font-size: 2vw;
+
+	font-weight: 900;
+	transform-origin: left top; 
+	transform: rotate(-90deg);
+
+	/*cursor: pointer;*/
+}
+
+.menu-item:hover {
+	fill: #303030 !important;
+	cursor: pointer;
+}
+
+.about-text{
+	position: absolute;
+	left: 3vw;
+	top: 50%;
+	transform: translate(0%, -50%); 
+
+	width: 25vw;
+
+	text-align: justify;
+  	text-justify: inter-word;
+	font-size: 1.2vw;
+
+	opacity: 0;
+}
+
+.project{
+	padding-top: 0vw;
+	height: 6vw;
+	width: 80vw;
+	stroke: #303030;
+	stroke-width:1;
+	fill:none;
+	font-size: 5vw;
+	font-weight: 900;
+}
+
+.project:hover text{
+	fill: #303030 !important;
+	cursor: pointer;
+}
+
+section.slideshow{
+	display: none;
+	
+	/*width: 55vw;
+	height: 38.67vw;*/
+	width: 40vw;
+	height: 28.12vw;
+	z-index: -1;
+	position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+section.slideshow img{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.text-line text {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 3s linear forwards, filling 2s linear forwards;
+}
+
+.text-line-2 text {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  stroke-dashoffset: 0;
+}
+
+a:-webkit-any-link{
+	text-decoration: none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  from{
+    fill: #303030;
+    stroke: rgba(48, 48, 48, 1);
+    fill-opacity: 0;
+  }
+  to {
+    fill: #303030;
+    stroke: rgba(48, 48, 48, 0);
+    fill-opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .items{display: none;}
+  .mobile{display: block;}
+  html,body{font-size: 20vw; margin: 0; overflow-x: scroll;}
+  .name{width: 90vw;height: 20vw; margin:5vw; margin-bottom: 0;}
+  .imgs{position:relative; width: 100%; height: 70.31%; margin-top: -2vh; margin-bottom: -5vh;}
+  .group{margin-top: 10%; z-index:0;}
+  .project{position:relative; font-size: 12vw; height: auto; margin-left: 5vw; z-index: 1; line-height: 90%; color:transparent; -webkit-text-stroke: 1px #303030; stroke-width: 0.1;}
+}
