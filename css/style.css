@@ -88,7 +88,7 @@ body{
 	height: 6vw;
 	width: 80vw;
 	stroke: #303030;
-	stroke-width:1;
+	stroke-width:0.05vw;
 	fill:none;
 	font-size: 5vw;
 	font-weight: 900;
